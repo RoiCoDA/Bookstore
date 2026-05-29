@@ -1,0 +1,921 @@
+body
+{
+    padding-bottom: 5vh;
+}
+
+/*
+    <div id="BookGeneralData">
+              <div id="BookTitle"> <!-- title -->
+                BookTitle
+              </div>
+              <div id="BookSubtitle"> <!-- subtitle -->
+                BookSubtitle 
+              </div>
+              <div id="BookAuthors"> <!-- authors -->
+                BookAuthors 
+              </div>
+              <div id="BookCategories"> <!-- categories -->
+                BookCategories 
+              </div>
+              <div id="BookPublisher"> <!-- publisher -->
+                BookPublisher 
+              </div>
+              <div id="BookPublishedDate"> <!-- publishedDate -->
+                BookPublishedDate 
+              </div>
+              <div id="BookPrintType"> <!-- printType -->
+                BookPrintType 
+              </div>
+              <div id="BookPageCount"> <!-- pageCount -->
+                BookPageCount 
+              </div>
+              <div id="BookPreviewLink"> <!-- previewLink -->
+                BookPreviewLink 
+              </div>
+              <div id="BookMaturityRating"> <!-- maturityRating -->
+                BookMaturityRating 
+              </div>
+              <div id="BookLanguage"> <!-- language -->
+                BookLanguage 
+              </div>
+              <div id="BookInfoLink"> <!-- infoLink -->
+                BookInfoLink 
+              </div>
+              <div id="BookISBN10"> <!-- ISBN10 -->
+                BookISBN10 
+              </div>
+              <div id="BookISBN13"> <!-- ISBN13 -->
+                BookISBN13 
+              </div>
+              <div id="BookSmallThumbnail"> <!-- smallThumbnail -->
+                BookSmallThumbnail 
+              </div>
+              <div id="BookThumbnail"> <!-- thumbnail -->
+                BookThumbnail 
+              </div>
+              <div id="BookCanonicalVolumeLink"> <!-- canonicalVolumeLink -->
+                BookCanonicalVolumeLink 
+              </div>
+              <div id="BookSelfLink"> <!-- selfLink -->
+                BookSelfLink 
+              </div>
+              <div id="BookIsEbook"> <!-- isEbook -->
+                BookIsEbook 
+              </div>
+              <div id="BookDownloadLink"> <!-- downloadLink -->
+                BookDownloadLink 
+              </div>
+              <div id="BookPrice"> <!-- Price -->
+                BookPrice 
+              </div>
+    </div>
+*/
+
+#Main__Container__Content
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center items horizontally */
+    justify-content: flex-start; /* Align items to the top */
+    justify-items: center;
+    min-height: 100vh; /* Ensure the container takes full viewport height */
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Ensure padding and border are included in the element's total width and height */
+}
+
+#TopProfileHolder {
+  display: flex;
+  flex-direction: column; /* Changed to column for responsive stacking */
+  height: auto;
+  background-color: #fafcf2  ;
+  width: 98%;
+  border-radius: 15px;
+  padding: 10px;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  min-height: 30vh;
+}
+
+#TopProfileLeftSection {
+  flex-basis: 25%;
+  margin-right: 10px;
+  height: auto; /* Allow height to adjust based on content */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#BookPictureHolder {
+  display: flex;
+  height: 210px;
+  width: 140px;
+  justify-content: center;
+  width: 100%; /* Ensure it takes the full width of its parent */
+}
+
+#BookPictureHolder img
+{
+  height: 210px;
+  width: 140px;
+}
+
+#BookBuySection {
+  display: flex;
+  height: 30%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%; /* Ensure it takes the full width of its parent */
+}
+
+#BookPrice {
+  
+  display: flex;
+  height: 30%;
+  align-items: center;
+  justify-content: center;
+  width: 100%; /* Ensure it takes the full width of its parent */
+  color: #45a049;
+}
+
+#BookBuyOrWishlist {
+  display: flex;
+  justify-content: center;
+  height: 70%;
+  gap: 5px;
+  width: 100%; /* Ensure it takes the full width of its parent */
+  
+}
+
+
+
+#BookBuyBttn,
+#BookWishlistBttn {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 15px;
+    margin: 5px; /* Add margin for spacing */
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#BookBuyBttn
+{
+  flex-grow: 2;
+}
+
+#BookGeneralData {
+  position: relative;
+  flex-basis: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 10px;
+  height: auto; /* Allow height to adjust based on content */
+  padding: 10px;
+  box-sizing: border-box; /* Ensure padding and border are included in width calculation */
+}
+
+#BookTitle,
+#BookSubtitle,
+#BookAuthors,
+#BookCategories {
+    margin-top: 5px;
+    border-radius: 10px;
+    padding: 10px;
+    margin-left: 0;
+    margin-bottom: 10px;
+    background-color: #eee9e4;
+    width: 100%; /* Make elements responsive */
+    box-sizing: border-box; /* Include padding and border in width calculation */
+    font-size: clamp(0.875rem, 0.6622rem + 0.973vw, 2rem);
+    display: flex;
+    align-items: center; /* Center text vertically */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-wrap: break-word; /* Break long words to prevent overflow */
+    white-space: normal; /* Allow text to wrap */
+}
+
+#BookTitle {
+  width: 100%; /* Make it take full width within its container */
+}
+
+/* Optional: Use flex-grow to make items grow if there is extra space */
+#BookTitle,
+#BookSubtitle,
+#BookAuthors,
+#BookCategories,
+#BookPublisher,
+#BookPublishedDate,
+#BookPrintType,
+#BookPageCount,
+#BookPreviewLink,
+#BookMaturityRating,
+#BookLanguage,
+#BookInfoLink,
+#BookISBN10,
+#BookISBN13, 
+#BookSmallThumbnail, 
+#BookThumbnail, 
+#BookCanonicalVolumeLink, 
+#BookSelfLink, 
+#BookIsEbook, 
+#BookDownloadLink, 
+#BookPrice {
+    flex-grow: 0; /* Prevent elements from growing too much */
+}
+
+
+/*********/
+
+#BookDescription
+{
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    width: 90%;
+}
+
+#BookDescriptionHeader
+{
+    flex-basis: 15%;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    border-bottom: 1px solid black;
+    background-color: aliceblue;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+
+
+#BookDescriptionContents
+{
+  background-color: #fafcf2;
+    display:flex;
+    flex-wrap: wrap;
+    align-content: space-evenly;
+    justify-content: space-evenly;
+    padding: 10px;
+    /* height:inherit; */
+    gap:10px;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    min-width: fit-content;
+    
+    font-size: clamp(0.75rem, 0.5989rem + 0.6536vw, 1.375rem);
+
+    /* flex-direction: column;
+    justify-content: center;
+    align-items: flex-start; */
+    /* width:30%; */
+    /* overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap; */
+}
+
+/*********/
+
+#BookSummary, #BooksOwner, #BooksAIandRating
+{
+    
+    /* height: 65vh; */
+    background-color: #fafcf2;
+    min-height: 270px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    width: 90%;
+}
+
+#BooksOwner
+{
+  display: none;
+}
+
+#BookSummary
+{
+  background-color: #fafcf2;
+}
+
+
+#BookSummaryHeader , #BooksOwnerHeader, #BooksAIandRatingHeader
+{
+    flex-basis: 15%;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    border-bottom: 1px solid black;
+    background-color: aliceblue;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+
+/* Roi ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////// Working */ 
+
+
+#StarsAndVerbalRating .stars-display {
+  display: flex;
+  
+  gap: 10px; /* Adjust gap between stars */
+  margin-bottom: 10px; /* Space between stars and text */
+}
+
+#StarsAndVerbalRating .star-filled {
+  color: gold;
+  font-size: 45px; /* Make stars bigger */
+}
+
+#StarsAndVerbalRating .star-empty {
+  color: lightgray;
+  font-size: 45px; /* Make stars bigger */
+}
+
+#StarsAndVerbalRating .rating-text {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+  margin-top: 20px;
+}
+
+#StarsAndVerbalRating .stars-display i.star {
+  font-size: 1.9em; /* Reduce the size by 5% from the original size */
+} 
+
+#BooksAIandRatingContainer,
+#BooksOwnerContents
+{
+  display: flex;
+  gap: 5px;
+}
+
+
+#AiSentimentBlock,
+#StarsAndVerbalRating,
+#DownloadAndLeaveRating,
+#UserRatingBlock
+{
+  
+  width: 48%;
+  min-height: 250px;
+  margin: 5px;
+  border-radius: 5px;
+}
+
+#StarsAndVerbalRating
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+  background-color: #f1f8ef; /* Light background color */
+  overflow: hidden;
+}
+
+#DownloadAndLeaveRating
+{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+
+#DownloadBttn,
+#LeaveRatingBttn
+{
+  min-width: 100px;
+  width: 50%;
+  border-radius: 5px;
+  padding: 10px;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#DownloadBttn
+{
+  display: none;
+}
+
+#UserRatingBlock
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#UserRatingDisplayer
+{
+  display: flex;
+  width:100%;
+  justify-content: center;
+  align-items: center;
+}
+
+
+#BookSummaryContents
+{
+  background-color: #fafcf2;
+    display:flex;
+    flex-wrap: wrap;
+    align-content: space-evenly;
+    justify-content: space-evenly;
+    padding: 10px;
+    /* height:inherit; */
+    gap:10px;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    width: 90%;
+    min-width: fit-content;
+    height: 100%;
+}
+
+
+#BookPublisher,
+#BookPublishedDate,
+#BookPrintType,
+#BookPageCount,
+#BookPreviewLink,
+#BookMaturityRating,
+#BookLanguage,
+#BookInfoLink,
+#BookISBN10,
+#BookISBN13, 
+#BookCanonicalVolumeLink, 
+#BookSelfLink, 
+#BookIsEbook {
+    background-color: var(--color--4);
+    display:flex;
+    /* flex-direction: column;
+    justify-content: center;
+    align-items: flex-start; */
+    width:30%;
+    font-size: clamp(1rem, 0.9718rem + 0.129vw, 1.125rem);
+    border-radius: 7px;
+    padding: 10px;
+    /* overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap; */
+    min-width: fit-content;
+}
+
+
+/****   Book review popup     ****/
+
+
+/* Modal Background */
+.modal-overlay {
+  display: none; /* Ensure the modal is hidden initially */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+  justify-content: center;
+  align-items: center; 
+}
+
+.modal-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  width: 90%;
+  max-width: 500px;
+  max-height: 80%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1010;
+  overflow-y: auto;
+}
+
+/* Close Button */
+.close-modal {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  font-size: 20px;
+  color: #888;
+}
+
+/* Form Styling */
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  display: block;
+}
+
+input[type="text"] {
+  width: 80%;
+  padding: 8px 10px;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+#reviewEditor {
+  height: 100px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+#charCount {
+  margin-top: 5px;
+  font-size: 14px;
+  color: #555;
+  text-align: right;
+}
+#charCount.exceeded {
+  color: red;
+  font-weight: bold;
+}
+
+/* ////////////////////////////////////////////////////////  */
+
+#BooksAuthor
+{
+    width: 90%;
+    background-color: beige;
+    min-height: 30vh;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+#BooksAuthorHeader
+{
+    flex-basis: 15%;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    border-bottom: 1px solid black;
+    background-color: aliceblue;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+#BookAuthorContents
+{
+    background-color: rgb(178, 178, 140);
+}
+
+/*********/
+
+#BookReviewsBox{
+    width: 90%;
+    background-color: beige;
+    min-height: 300px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    margin-bottom: 50px;
+}
+
+#BookReviewsBoxHeader{
+    flex-basis: 15%;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    border-bottom: 1px solid black;
+    background-color: aliceblue;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+#BookReviewsContents{
+  background-color: #fafcf2;
+}
+
+/*********/
+
+#BottomBarBeforeChat
+{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 5vh;
+    background-color: rgb(53, 53, 53); /* Optional: for visibility */
+    text-align: center; /* Optional: center the content */
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+#BottomBarChatExpanded
+{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 5vh;
+    background-color: rgb(53, 53, 53); /* Optional: for visibility */
+    text-align: center; /* Optional: center the content */
+    display: flex;
+    align-items: center;
+    display: none;
+}
+
+#BottomBarChatSummonBttn
+{
+    padding: 10px;
+    background-color: aliceblue;
+    border-radius: 5px;
+    border: 1px solid silver;
+    margin-left: 15px;
+}
+
+#ChatSendBttn
+{
+    padding: 10px;
+    background-color: aliceblue;
+    border-radius: 5px;
+    border: 1px solid silver;
+    margin-left: 15px;
+}
+
+#ChatInputContainerContainer
+{
+    height: 80%;
+    flex-basis: 85%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#ChatInputContainer
+{
+    width: 80%;
+    height: 100%;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+
+#ChatInput
+{
+    width: 100%;
+    height: 80%;
+    font-size: 18px;
+}
+
+#ChatSendBttnContainer
+{
+    flex-basis: 12%;
+}
+
+@media (max-width: 800px) {
+  #TopProfileHolder {
+      flex-direction: column;
+  }
+
+  #BookGeneralData {
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+  }
+
+  #TopProfileLeftSection {
+      min-width: 200px;
+      max-width: 350px;
+      min-height: 300px;
+      align-self: center;
+  }
+
+  #BookSummaryContents {
+      flex-direction: column;
+      width: 100%;
+  }
+
+  #BooksAIandRatingContainer,
+  #DownloadAndLeaveRating,
+  #BooksOwnerContents
+  {
+    flex-direction: column;
+    
+  }
+
+  #AiSentimentBlock,
+#StarsAndVerbalRating,
+#DownloadAndLeaveRating,
+#UserRatingBlock
+{
+  min-width: 98%;
+}
+
+#DownloadAndLeaveRating
+{
+  max-height: 100px;
+}
+
+
+}
+
+@media (min-width: 801px)  
+{
+  #TopProfileHolder {
+    flex-direction: row; /* Row direction for larger screens */
+}
+}
+
+@media (min-width: 1901px) {
+  #TopProfileHolder,
+  #BookDescription,
+  #BookSummary,
+  #BooksAuthor,
+  #BookReviewsBox,
+  #BooksAIandRating,
+  #BooksOwner {
+      width: 60%;
+  }
+}
+
+
+#NoReviewsMessage{
+  display: none;
+  color: #888; 
+  text-align: center; 
+  margin: 20px;
+}
+
+
+
+@media (max-width: 600px)
+{
+    .splide{
+        width: 400px;
+    }
+    .meta{
+        display:flex;
+        flex-direction: column;
+        /* justify-content: space-between; */
+    }
+    .footer{
+        display:flex;
+        flex-direction: column;
+        /* justify-content: space-between; */
+    }
+}
+
+@media (max-width: 400px)
+{
+    .splide{
+        width: 300px;
+        /* font-size:8px; */
+    }
+    /* .review-card{
+        width: 300px;
+        
+        display:flex;
+        flex-direction: column;
+    } */
+    .meta{
+        display:flex;
+        flex-direction: column;
+        /* justify-content: space-between; */
+    }
+    .footer{
+        display:flex;
+        flex-direction: column;
+        /* justify-content: space-between; */
+    }
+}
+#BookReviewsContents{
+    display: flex;
+    justify-content: center;
+}
+.splide{
+    width: 90%;
+    max-width: 900px;
+    justify-content: center;
+    display:flex; 
+}
+
+.star-ranking {
+  display: flex;
+  flex-direction: column; /* Stack text and stars vertically */
+  align-items: center; /* Center text and stars horizontally */
+}
+
+.star-ranking-text {
+  margin-bottom: 5px; /* Space between text and stars */
+  font-weight: bold;  /* Optional: make the text bold */
+}
+
+.stars-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  white-space: nowrap;
+}
+
+.no-reviews {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 22px;
+  text-align: center;
+}
+
+#UserRatingDisplayer .review-card {
+  padding: 10px;
+}
+#UserRatingDisplayer .meta .star-ranking {
+  padding: 5px 0;
+}
+#UserRatingDisplayer .meta .name {
+  /* padding: 5px 0; */
+  overflow: hidden;
+  position: relative;
+}
+
+#UserRatingDisplayer .review-card{
+  width: 100%;
+}
+
+#AiSentimentBlock {
+  padding: 20px;
+  background-color: #f1f8ef;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 18px;
+  line-height: 1.6em;
+}
+
+#AiSentimentBlock .sentiment-header {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+#AiSentimentBlock .sentiment-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#AiSentimentBlock .sentiment-item {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+#AiSentimentBlock .sentiment-item strong {
+  color: #4CAF50; /* Green color for positive sentiment */
+}
+
+#AiSentimentBlock .error-message {
+  color: red;
+  font-size: 16px;
+  text-align: center;
+}
+
+

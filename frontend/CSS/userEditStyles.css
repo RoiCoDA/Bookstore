@@ -1,0 +1,240 @@
+#Main__Container {
+    display: flex;
+    flex: 1;
+    overflow: auto; /* Ensure overflow is handled */
+}
+
+#Main__Container__Content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 100vh;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  #TopProfileHolder {
+    display: flex;
+    height: auto; /* Allow height to adjust based on content */
+    background-color: #fafcf2;
+    width: 98%;
+    border-radius: 15px;
+    padding: 10px;
+    box-sizing: border-box; /* Include padding in the element's total width and height */
+    margin-bottom: 20px; /* Add margin to space out from other content */
+    min-height: 30vh;
+}
+
+
+#UserProfilePictureHolder {
+    flex-basis: 30%;
+    background-color: #fafcf2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%; 
+    overflow: hidden;
+}
+
+#UserProfilePicFrame
+{
+    min-width: 100px;
+    min-height: 100px;
+    max-width: 400px;
+    max-height: 400px;
+    overflow: hidden;
+    border-radius: 100%;
+}
+
+#UserGeneralData {
+    position: relative;
+    flex-basis: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Align items to the top */
+    gap: 10px;
+    height: 100%; /* Ensure it takes the full height of its parent */
+}
+
+#UserProfileNameHolder,
+#UserProfileJoinDateHolder,
+#UserSignature {
+    margin-top: 5px;
+    border-radius: 10px;
+    background-color: #eee9e4;
+    padding: 10px; /* Reduce padding for a more compact look */
+    margin-left: 0; /* Remove left margin */
+    margin-bottom: 10px; /* Add bottom margin for spacing */
+    width: 90%; /* Make elements responsive */
+    box-sizing: border-box; /* Include padding and border in width calculation */
+    max-height: 250px;
+    overflow-y: auto;
+    font-size: clamp(0.75rem, 0.5989rem + 0.6536vw, 1.375rem);
+}
+#UserProfileNameHolder,
+#UserProfileJoinDateHolder
+{
+    width: 50%;
+}
+
+/* Optional: Use flex-grow to make items grow if there is extra space */
+#UserProfileNameHolder,
+#UserProfileJoinDateHolder,
+#UserSignature {
+    flex-grow: 0; /* Prevent elements from growing too much */
+}
+
+  
+  #UserPersonalizeBttn {
+    position: absolute;
+    padding: 10px;
+    right: 10px;
+    top: 10px;
+    background-color: rgb(210, 207, 207);
+    border-radius: 5px;
+    border-radius: 1px solid black;
+  }
+  
+
+
+#UserEditParametersHolder {
+    width: 100%;
+    max-width: 800px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    box-sizing: border-box;
+    margin: 20px 0;
+}
+
+.form-holder {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ccc; /* Add a thin line between sections */
+    padding-bottom: 20px; /* Add space to the bottom of each section */
+}
+
+.form-holder:last-child {
+    border-bottom: none; /* Remove the bottom border for the last section */
+}
+
+.user-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.user-form h2 {
+    margin-bottom: 10px;
+    font-size: 1.5em;
+    color: #333;
+}
+
+.user-form p {
+    margin-bottom: 10px;
+    font-size: 1em;
+    color: #555;
+}
+
+.user-form label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.user-form input[type="password"],
+.user-form input[type="email"],
+.user-form input[type="file"] {
+    padding: 10px;
+    margin-bottom: 15px; /* Add more space between components */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+/* .user-form #editor {
+    margin-bottom: 15px; 
+} */
+ 
+.user-form button {
+    padding: 10px;
+    background-color: var(--color--2); /* Change to gray */
+    color: #333; /* Darker text for contrast */
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    width: 150px; /* Less wide buttons */
+    align-self: flex-start; /* Align buttons to the start */
+    transition: background-color 0.3s ease;
+}
+
+.user-form button:hover {
+    background-color: rgb(99, 155, 99); /* Darken on hover */
+}
+
+.profilepic {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover; /* Ensures the image covers the container without stretching */
+}
+
+
+#quillEditorContainer
+{
+    height: 200px;
+    margin-bottom: 60px;
+}
+
+@media (max-width: 1200px) {
+  #TopProfileHolder {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #UserProfilePictureHolder {
+    flex-basis: auto;
+    width: 100%;
+    max-height: 25vh;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  #UserGeneralData {
+    flex-basis: auto;
+    width: 100%;
+    height: auto;
+    align-items: center;
+    text-align: center;
+  }
+
+  #UserProfileNameHolder,
+  #UserProfileJoinDateHolder,
+  #UserSignature {
+    width: 90%;
+  }
+}
+
+@media (max-width: 800px)
+{
+    #SideNavBar
+    {
+        flex-basis: 0;
+        display: none;
+    }
+
+    #Main__Container__Content {
+        flex-basis: 100%
+    }
+}
+
+
+#changeSignature {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    width:100%;
+}

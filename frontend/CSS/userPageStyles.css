@@ -1,0 +1,354 @@
+#Main__Container__Content
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center items horizontally */
+    justify-content: flex-start; /* Align items to the top */
+    min-height: 100vh; /* Ensure the container takes full viewport height */
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Ensure padding and border are included in the element's total width and height */
+}
+
+
+#TopProfileHolder {
+    display: flex;
+    height: auto; /* Allow height to adjust based on content */
+    background-color: #fafcf2;
+    width: 98%;
+    border-radius: 15px;
+    padding: 10px;
+    box-sizing: border-box; /* Include padding in the element's total width and height */
+    margin-bottom: 20px; /* Add margin to space out from other content */
+    min-height: 30vh;
+}
+
+
+#UserProfilePictureHolder {
+    flex-basis: 30%;
+    background-color: #fafcf2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%; 
+    overflow: hidden;
+}
+
+#UserProfilePicFrame
+{
+    min-width: 100px;
+    min-height: 100px;
+    max-width: 400px;
+    max-height: 400px;
+    overflow: hidden;
+    border-radius: 100%;
+}
+
+#UserGeneralData {
+    position: relative;
+    flex-basis: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Align items to the top */
+    gap: 10px;
+    height: 100%; /* Ensure it takes the full height of its parent */
+}
+
+#UserProfileNameHolder,
+#UserProfileJoinDateHolder,
+#UserSignature {
+    margin-top: 5px;
+    border-radius: 10px;
+    background-color: #eee9e4;
+    padding: 10px; /* Reduce padding for a more compact look */
+    margin-left: 0; /* Remove left margin */
+    margin-bottom: 10px; /* Add bottom margin for spacing */
+    width: 90%; /* Make elements responsive */
+    box-sizing: border-box; /* Include padding and border in width calculation */
+    max-height: 250px;
+    overflow-y: auto;
+    font-size: clamp(0.75rem, 0.5989rem + 0.6536vw, 1.375rem);
+}
+#UserProfileNameHolder,
+#UserProfileJoinDateHolder
+{
+    width: 50%;
+}
+
+/* Optional: Use flex-grow to make items grow if there is extra space */
+#UserProfileNameHolder,
+#UserProfileJoinDateHolder,
+#UserSignature {
+    flex-grow: 0; /* Prevent elements from growing too much */
+}
+
+#UserPersonalizeBttn
+{
+    position: absolute;
+    padding: 10px;
+    right: 10px;
+    top: 10px;
+    background-color: rgb(210, 207, 207);
+    border-radius: 5px;
+    border-radius: 1px solid black;
+    cursor: pointer;
+}
+
+  #UserLibraryNavigationPanel {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping into multiple lines */
+    align-items: center;
+    justify-content: center; /* Center the items */
+    gap: 10px; /* Add some space between buttons */
+    width: 98%; /* Ensure it takes the full width */
+    box-sizing: border-box; /* Include padding and border in the element's total width */
+    min-height: 5vh;
+}
+
+/* Buttons styling */
+#OwnedBooksChooser, #ReadBooksChooser, #TradedBooksChooser, #WishlistBooksChooser, #UserReviewsChooser {
+    
+    padding: 5px;
+    
+    background-color: var(--color--3);
+    flex: 1 1 150px; /* Flex-grow, flex-shrink, flex-basis for equal width and wrapping */
+    text-align: center; /* Center text inside buttons */
+    min-width: 150px; /* Ensure a minimum width */
+    box-sizing: border-box; /* Include padding and border in the element's total width */
+    width: 100%;
+}
+
+/* Hover state */
+#OwnedBooksChooser:hover, 
+#ReadBooksChooser:hover, 
+#TradedBooksChooser:hover, 
+#WishlistBooksChooser:hover, 
+#UserReviewsChooser:hover {
+    background-color: var(--color--2);
+    cursor: pointer;
+}
+
+#OwnedBooksChooser.selectedBtn, #ReadBooksChooser.selectedBtn, #TradedBooksChooser.selectedBtn, #WishlistBooksChooser.selectedBtn, #UserReviewsChooser.selectedBtn {
+    background-color: var(--color--2);
+    transform: scale(0.98);
+}
+
+#OwnedBooksContainer.hiddenDiv, #ReadBooksContainer.hiddenDiv, #TradedBooksContainer.hiddenDiv, #WishlistBooksContainer.hiddenDiv, #UserReviewsContainer.hiddenDiv {
+    display: none;
+}
+
+#LibraryContentHolder
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2vh;
+    margin-top: 15px;
+    width: 75vw;
+}
+
+#OwnedBooksContainer,
+#ReadBooksContainer,
+#TradedBooksContainer,
+#WishlistBooksContainer,
+#UserReviewsContainer
+{
+    max-width: 100vh;
+    background-color: #fafcf2;
+    min-height: 30vh;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#OwnedBooksHeader,
+#ReadBooksHeader,
+#TradedBooksHeader,
+#WishlishtBooksHeader,
+#UserReviewsHeader
+{
+    flex-basis: 15%;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    border-bottom: 1px solid black;
+    background-color: aliceblue;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+#TradedBooksHeader,
+#WishlishtBooksHeader
+{
+display: flex;
+align-items: center; /* Vertically center the items */
+justify-content: space-between; /* Distribute space between items */
+width: 100%;
+box-sizing: border-box; /* Ensure padding is included in the width */
+}
+
+#TradedBooksH1,
+#WishlistBooksH1
+{
+    flex-basis: 50%;
+}
+
+#TradedBooksToTradeBttn,
+#WishlistBooksToTradeBttn
+{
+    background-color: var(--color--3);
+    border-radius: 5px;
+    padding: 5px;
+    justify-self: flex-end;
+}
+
+.profilepic {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover; /* Ensures the image covers the container without stretching */
+    border-radius: 100%;
+  }
+
+@media (max-width: 1200px) {
+    #TopProfileHolder {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    #UserProfilePictureHolder {
+      flex-basis: auto;
+      width: 100%;
+      max-height: 25vh;
+      margin-right: 0;
+      margin-bottom: 20px;
+    }
+  
+    #UserGeneralData {
+      flex-basis: auto;
+      width: 100%;
+      height: auto;
+      align-items: center;
+      text-align: center;
+    }
+  
+    #UserProfileNameHolder,
+    #UserProfileJoinDateHolder,
+    #UserSignature {
+      width: 70%;
+    }
+  }
+
+  /* @media (max-width: 800px)
+{
+    #SideNavBar
+    {
+        flex-basis: 0;
+        display: none;
+    }
+
+    #Main__Container__Content {
+        flex-basis: 100%
+    }
+} */
+
+
+#NoReviewsMessage {
+  display: none;
+  text-align: center;
+  justify-content: center;
+  align-content: center;
+  margin: 20px;
+}
+
+.splide {
+  width: 90%;
+  max-width: 900px;
+  justify-content: center;
+  display: flex;
+}
+
+.star-ranking {
+  display: flex;
+  flex-direction: column; /* Stack text and stars vertically */
+  align-items: center; /* Center text and stars horizontally */
+}
+
+.star-ranking-text {
+  margin-bottom: 5px; /* Space between text and stars */
+  font-weight: bold;  /* Optional: make the text bold */
+}
+
+.stars-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  white-space: nowrap;
+}
+
+.no-reviews {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  font-size: 22px;
+  text-align: center;
+}
+
+
+.no-reviews-box{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#UserReviewsBoxContainer{
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-width: 700px)
+{
+    .splide{
+        width: 400px;
+    }
+    .meta{
+        display:flex;
+        flex-direction: column;
+        /* justify-content: space-between; */
+    }
+    .footer{
+        display:flex;
+        flex-direction: column;
+        /* justify-content: space-between; */
+    }
+}
+
+@media (max-width: 520px)
+{
+    .splide{
+        width: 300px;
+        /* font-size:8px; */
+    }
+    /* .review-card{
+        width: 300px;
+        
+        display:flex;
+        flex-direction: column;
+    } */
+    .meta{
+        display:flex;
+        flex-direction: column;
+        /* justify-content: space-between; */
+    }
+    .footer{
+        display:flex;
+        flex-direction: column;
+        /* justify-content: space-between; */
+    }
+}
+

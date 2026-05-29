@@ -1,0 +1,209 @@
+#Main__Container__Content {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center items horizontally */
+    justify-content: flex-start; /* Align items to the top */
+    min-height: 100vh; /* Ensure the container takes full viewport height */
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Ensure padding and border are included in the element's total width and height */
+}
+
+#MainBannerHolder {
+    width: 100%; /* Ensures the banner container takes full width */
+    max-width: 1500px; /* Optional: Set a maximum width */
+    display: flex; /* Use flex to center the image */
+    justify-content: center; /* Center the image horizontally */
+}
+
+.MainBanner {
+    width: 100%; /* Ensures the banner image resizes with its container */
+    height: auto; /* Maintains aspect ratio */
+}
+
+#OfferBookForTradeBttnContainer
+{
+    min-height: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+
+#OfferBookForTradeBttn
+{
+    padding: 10px;
+    background-color: silver;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin-left: 20px;
+}
+
+#SearchForATradableBookContainer
+{
+    margin-top: 30px;
+    background-color: beige;
+    min-height: 15vh;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+
+#SearchForATradableBookHeader
+{
+    flex-basis: 15%;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    border-bottom: 1px solid black;
+    background-color: var(--color--4);
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+#OfferedBooksHeader
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-basis: 15%;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    border-bottom: 1px solid black;
+    background-color: var(--color--4);
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+#OfferedBooksHeaderShowAllBttn
+{
+    padding: 10px;
+    border-radius: 5px;
+    background-color: var(--color--3);
+    
+}
+
+#SearchForATradableBookQueryHolder
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    height: 50%;
+    margin-top: 20px;
+}
+
+#SearchForATradableBookInputContainer
+{
+    width: 80%;
+    height: 5vh;
+    border-radius: 10px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#SearchForATradableBookInput
+{
+    width: 90%;
+    height: 100%;
+    border-radius: 10px;
+    font-size: 18px;
+}
+
+#SearchForATradableBookBttn
+{
+    text-align: center;
+    border: 1px solid black;
+    background-color: silver;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#OfferedBooksContainer
+{
+    background-color: beige;
+    min-height: 30vh;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    box-sizing: border-box;
+    margin-bottom: 30px;
+}
+
+
+/* Styling for the trade blocks    */
+
+/* Styling for the container that holds all the book offers */
+#OfferedBooksDisplay {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Space between each book-offer component */
+    padding: 10px; /* Padding inside the container */
+    box-sizing: border-box; /* Ensure padding is included in the width/height */
+  }
+  
+  /* Styling for each book offer */
+  .book-offer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--color--2); /* Deep green color */
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2); /* Slight shadow for depth */
+    color: rgb(41, 41, 41);
+  }
+  
+  /* Styling for the book name */
+  .book-name {
+    flex: 1; /* Takes up the remaining space */
+    font-weight: bold;
+  }
+  
+  /* Styling for the user name */
+  .user-name {
+    flex: 1; /* Takes up the remaining space */
+    text-align: center;
+  }
+  
+  /* Styling for the trade button */
+  .trade-button {
+    background-color: var(--color--3); /* Gold color for the button */
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .trade-button:hover {
+    background-color: #70ba7a; /* Darker shade of gold on hover */
+  }
+
+
+
+ @media (min-width: 1901px)
+ {
+    #SearchForATradableBookContainer,
+    #OfferedBooksContainer 
+    {
+        width: 60%;
+    }
+
+ }
+
+
+
+
+  /* #SearchForATradableBookContainer
+     #OfferedBooksContainer       */

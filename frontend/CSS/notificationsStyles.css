@@ -1,0 +1,228 @@
+/* Main container styling */
+#Main__Container__Content {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center items horizontally */
+    justify-content: flex-start; /* Align items to the top */
+    min-height: 100vh; /* Ensure the container takes full viewport height */
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Ensure padding and border are included in the element's total width and height */
+}
+
+/* Header holder styling */
+#NotificationCenterHeaderHolder {
+    width: 90%;
+    min-height: 15vh;
+    background-color: #f2f6df;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* Notification container styling */
+#NotificationContainer {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+}
+
+/* Notification control holder styling */
+#NotificationsControlHolderHelder {
+    background-color: var(--color--2);
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    gap: 20px;
+    border-bottom: 1px solid black;
+}
+
+/* Styling for instructions tag */
+#NotificationsInstructionsTag {
+    margin-left: 10px;
+}
+
+/* Styling for "Mark as Read" and "Delete" buttons */
+#NotificationsSetMarkedAsRead,
+#NotificationsDeleteMarked {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#NotificationsSetMarkedAsRead {
+    background-color: rgb(193, 122, 122);
+    margin-right: 10px;
+}
+
+#NotificationsDeleteMarked {
+    background-color: rgb(78, 181, 95);
+}
+
+/* Display box for notifications */
+#NotificationDisplayBox {
+    flex-basis: 90%;
+    background-color: #f2f6df;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+/* Notification Styles */
+.notification {
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin: 10px; /* Uniform 10px margin on all sides */
+    padding: 15px; /* Increased padding to make the notification taller */
+    overflow: hidden;
+    transition: opacity 0.3s ease, padding 0.3s ease;
+    opacity: 1;
+    min-height: 60px; /* Optional: Ensure a minimum height for each notification */
+}
+
+#select-all-notifications-container
+{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    margin-left: 10px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    cursor: pointer;
+}
+/* Hide the default checkbox */
+#select-all-notifications {
+    appearance: auto;
+    -webkit-appearance: auto;
+    -moz-appearance: auto;
+    width: 15px;
+    height: 15px;
+    border: 2px solid #3b3b3b; /* Border color for the checkbox */
+    border-radius: 4px;
+    background-color: #fff; /* Background color of the checkbox */
+    cursor: pointer;
+    position: relative;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+/* Style the checkbox when checked */
+#select-all-notifications:checked {
+    background-color: #5a9bd3; /* Background color when checked */
+    border-color: #467ba0; /* Border color when checked */
+}
+/* Notification header styling */
+.notification-header {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+/* Checkbox styling */
+.notification-checkbox {
+    cursor: auto; /* Ensure checkbox is not clickable */
+    margin-right: 10px;
+}
+
+/* Notification title styling */
+.notification-title {
+    flex-grow: 1;
+    padding-left: 10px;
+    height: 100%; /* Ensure full height */
+    display: flex;
+    align-items: center;
+}
+
+/* Expand toggle button styling */
+.expand-toggle {
+    font-size: 1.5em;
+    cursor: pointer;
+    height: 100%; /* Ensure full height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Notification content styling */
+.notification-content {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    padding-top: 10px;
+}
+
+/* Notification action buttons styling */
+.notification-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.notification-btn {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+/* Notification active state styling */
+.notification.active .notification-content {
+    display: block;
+    opacity: 1;
+}
+
+.notification-header {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    height: 100%;
+}
+
+.notification-title {
+    flex-grow: 1;
+    padding-left: 10px;
+    height: 100%; /* Ensure full height */
+    display: flex;
+    align-items: center;
+}
+
+.expand-toggle {
+    font-size: 1.5em;
+    cursor: pointer;
+    height: 100%; /* Ensure full height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.notification.unread {
+    background-color: lightblue;
+}
+
+/* Responsive styles for smaller screens */
+@media (max-width: 600px) {
+    .notification-actions {
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    .notification-btn {
+        width: 100%;
+        text-align: center;
+    }
+}

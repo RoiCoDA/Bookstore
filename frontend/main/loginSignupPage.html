@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<!-- Created by CodingLab |www.youtube.com/c/CodingLabYT-->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="../CSS/loginSignupPageStyles.css" />
+    <link rel="icon" href="../media/bookIcon.png" type="image/png" />
+    <title>Login or Sign Up</title>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.js"
+      integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+      crossorigin="anonymous"
+      defer
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/firebase/8.2.2/firebase-app.min.js"
+      defer
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/microsoft-signalr/8.0.7/signalr.js"></script>
+    <!--TODO: Add SDKs for Firebase products that you want to use. https://cdnout.com/cdn/firebase@8.2.2-->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/firebase/8.2.2/firebase-analytics.min.js"
+      defer
+    ></script>
+    <!--**** Remember to add the database script ***-->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/firebase/8.2.2/firebase-database.min.js"
+      defer
+    ></script>
+    <!--Your web app's Firebase configuration-->
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <script type="module" src="../script/ajaxCalls.js"></script>
+    <script type="module" src="../script/generalScript.js"></script>
+    <script type="module" src="../script/signalR.js" defer></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <div class="container">
+      <input type="checkbox" id="flip" />
+      <div class="cover">
+        <div class="front"></div>
+        <div class="back"></div>
+      </div>
+      <div class="forms">
+        <div class="form-content">
+          <div class="login-form">
+            <div class="title">Login</div>
+            <form id="loginForm">
+              <div class="input-boxes">
+                <div class="input-box">
+                  <i class="fas fa-envelope"></i>
+                  <input
+                    type="text"
+                    id="userEmailLoginInput"
+                    placeholder="Enter your email"
+                    required
+                  />
+                </div>
+                <div class="input-box">
+                  <i class="fas fa-lock"></i>
+                  <input
+                    id="userPasswordLoginInput"
+                    type="password"
+                    placeholder="Enter your password"
+                    required
+                  />
+                </div>
+
+                <div class="remember-me">
+                  <input type="checkbox" id="remember-login" />
+                  <label for="remember-login">Remember me</label>
+                </div>
+                <div class="text"><a href="#">Forgot password?</a></div>
+                <div class="button input-box">
+                  <input id="loginSubmit" type="submit" value="Submit" />
+                </div>
+                <div class="text sign-up-text">
+                  Don't have an account? <label for="flip">Signup now</label>
+                </div>
+                <div class="google-btn">
+                  <button class="googleUserInteract" type="button">
+                    Login with Google
+                  </button>
+                </div>
+              </div>
+            </form>
+            <div class="LoginSignupMessage">
+              Note: If you want to enter with password after you signed up with
+              google, you need to change your password in My Page settings
+            </div>
+          </div>
+          <div class="signup-form">
+            <div class="title">Signup</div>
+            <form id="signupForm">
+              <div class="input-boxes">
+                <div class="input-box">
+                  <i class="fas fa-user"></i>
+                  <input
+                    type="text"
+                    id="userNameSignupInput"
+                    placeholder="Enter your name"
+                    required
+                  />
+                </div>
+                <div class="input-box">
+                  <i class="fas fa-envelope"></i>
+                  <input
+                    type="text"
+                    id="userEmailSignupInput"
+                    placeholder="Enter your email"
+                    required
+                  />
+                </div>
+                <div class="input-box">
+                  <i class="fas fa-lock"></i>
+                  <input
+                    id="userPasswordSignupInput"
+                    type="password"
+                    placeholder="Enter your password"
+                    required
+                  />
+                </div>
+
+                <div class="remember-me">
+                  <input type="checkbox" id="remember-signup" />
+                  <label for="remember-signup">Remember me</label>
+                </div>
+                <div class="button input-box">
+                  <input id="SignupSubmit" type="submit" value="Submit" />
+                </div>
+                <div class="text sign-up-text">
+                  Already have an account? <label for="flip">Login now</label>
+                </div>
+                <div class="google-btn">
+                  <button class="googleUserInteract" type="button">
+                    Signup with Google
+                  </button>
+                </div>
+              </div>
+            </form>
+            <div class="LoginSignupMessage">
+              Note: If you want to enter with password after you signed up with
+              google, you need to change your password in My Page settings
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="home-btn">
+      <button onclick="window.location.href='index.html'">
+        Return to Home
+      </button>
+    </div>
+  </body>
+</html>

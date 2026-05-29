@@ -1,0 +1,620 @@
+[
+  {
+    "author": "J.D. Salinger",
+    "summary": "Jerome David Salinger was an American author best known for his 1951 novel The Catcher in the Rye. Salinger published several short stories in Story magazine in 1940, before serving in World War II. In 1948, his critically acclaimed story \"A Perfect Day for Bananafish\" appeared in The New Yorker, which published much of his later work.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/9/93/J._D._Salinger_%28Catcher_in_the_Rye_portrait%29.jpg",
+    "link": "https://en.wikipedia.org/wiki/J._D._Salinger"
+  },
+  {
+    "author": "Yuval Noah Harari",
+    "summary": "Yuval Noah Harari is an Israeli medievalist, military historian, public intellectual, and writer. He currently serves as professor in the Department of History at the Hebrew University of Jerusalem. He is the author of the popular science bestsellers Sapiens: A Brief History of Humankind (2011), Homo Deus: A Brief History of Tomorrow (2016), and 21 Lessons for the 21st Century (2018). His writings examine free will, consciousness, intelligence, happiness, and suffering.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/3/31/Yuval_Noah_Harari_October_2011_small.jpg",
+    "link": "https://en.wikipedia.org/wiki/Yuval_Noah_Harari"
+  },
+  {
+    "author": "James Joyce",
+    "summary": "James Augustine Aloysius Joyce was an Irish novelist, poet and literary critic. He contributed to the modernist avant-garde movement and is regarded as one of the most influential and important writers of the 20th century. Joyce's novel Ulysses (1922) is a landmark in which the episodes of Homer's Odyssey are paralleled in a variety of literary styles, particularly stream of consciousness. Other well-known works are the short-story collection Dubliners (1914), and the novels A Portrait of the Artist as a Young Man (1916) and Finnegans Wake (1939). His other writings include three books of poetry, a play, letters, and occasional journalism.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/1/1e/Revolutionary_Joyce_Better_Contrast.jpg",
+    "link": "https://en.wikipedia.org/wiki/James_Joyce"
+  },
+  {
+    "author": "John Steinbeck",
+    "summary": "John Ernst Steinbeck was an American writer. He won the 1962 Nobel Prize in Literature \"for his realistic and imaginative writings, combining as they do sympathetic humor and keen social perception\". He has been called \"a giant of American letters.\"",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d7/John_Steinbeck_1939_%28cropped%29.jpg",
+    "link": "https://en.wikipedia.org/wiki/John_Steinbeck"
+  },
+  {
+    "author": "Paulo Coelho",
+    "summary": "Paulo Coelho de Souza is a Brazilian lyricist and novelist and a member of the Brazilian Academy of Letters since 2002. His 1988 novel The Alchemist was an international best-seller.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/0/02/Paulo_Coelho%2C_June_2024.jpg",
+    "link": "https://en.wikipedia.org/wiki/Paulo_Coelho"
+  },
+  {
+    "author": "Gabriel García Márquez",
+    "summary": "Gabriel José de la Concordia García Márquez was a Colombian novelist, short-story writer, screenwriter, and journalist, known affectionately as Gabo or Gabito throughout Latin America. Considered one of the most significant authors of the 20th century, particularly in the Spanish language, he was awarded the 1972 Neustadt International Prize for Literature and the 1982 Nobel Prize in Literature. He pursued a self-directed education that resulted in leaving law school for a career in journalism. From early on he showed no inhibitions in his criticism of Colombian and foreign politics. In 1958, he married Mercedes Barcha Pardo; they had two sons, Rodrigo and Gonzalo.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/0/0f/Gabriel_Garcia_Marquez.jpg",
+    "link": "https://en.wikipedia.org/wiki/Gabriel_Garc%C3%ADa_M%C3%A1rquez"
+  },
+  {
+    "author": "George R. R. Martin",
+    "summary": "George Raymond Richard Martin, also known by the initials G.R.R.M., is an American author, television writer, and television producer. He is best known as the author of the series of epic fantasy novels A Song of Ice and Fire, which were adapted into the Primetime Emmy Award–winning television series Game of Thrones (2011–2019) and its prequel series House of the Dragon (2022–present). He also helped create the Wild Cards anthology series, and contributed worldbuilding for the video game Elden Ring (2022).",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/e/ed/Portrait_photoshoot_at_Worldcon_75%2C_Helsinki%2C_before_the_Hugo_Awards_%E2%80%93_George_R._R._Martin.jpg",
+    "link": "https://en.wikipedia.org/wiki/George_R._R._Martin"
+  },
+  {
+    "author": "Zhizhong Cai",
+    "summary": "",
+    "image": "",
+    "link": ""
+  },
+  {
+    "author": "Alexandre Dumas",
+    "summary": "Alexandre Dumas, also known as Alexandre Dumas père, was a French novelist and playwright.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/0/06/Alexander_Dumas_p%C3%A8re_par_Nadar_-_Google_Art_Project.jpg",
+    "link": "https://en.wikipedia.org/wiki/Alexandre_Dumas"
+  },
+  {
+    "author": "George Orwell",
+    "summary": "Eric Arthur Blair was a British novelist, poet, essayist, journalist, and critic who wrote under the pen name of George Orwell. His work is characterised by lucid prose, social criticism, opposition to all totalitarianism, and support of democratic socialism.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/7/7e/George_Orwell_press_photo.jpg",
+    "link": "https://en.wikipedia.org/wiki/George_Orwell"
+  },
+  {
+    "author": "Leo Tolstoy",
+    "summary": "Count Lev Nikolayevich Tolstoy, usually referred to in English as Leo Tolstoy, was a Russian writer. He is regarded as one of the greatest and most influential authors of all time. He received nominations for the Nobel Prize in Literature every year from 1902 to 1906 and for the Nobel Peace Prize in 1901, 1902, and 1909.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/1/1c/L._N._Tolstoy%2C_by_Prokudin-Gorsky_%28cropped%29.jpg",
+    "link": "https://en.wikipedia.org/wiki/Leo_Tolstoy"
+  },
+  {
+    "author": "graf Leo Tolstoy",
+    "summary": "",
+    "image": "",
+    "link": ""
+  },
+  {
+    "author": "Dale Carnegie",
+    "summary": "Dale Carnegie was an American writer and lecturer, and the developer of courses in self-improvement, salesmanship, corporate training, public speaking, and interpersonal skills. Born into poverty on a farm in Missouri, he was the author of How to Win Friends and Influence People (1936), a bestseller that remains popular today. He also wrote How to Stop Worrying and Start Living (1948), Lincoln the Unknown (1932), and several other books.",
+    "image": "https://upload.wikimedia.org/wikipedia/en/0/0c/Dale_Carnegie.jpg",
+    "link": "https://en.wikipedia.org/wiki/Dale_Carnegie"
+  },
+  {
+    "author": "E. L. James",
+    "summary": "Erika Mitchell, known by her pen name E. L. James, is a British author. She wrote the best-selling Fifty Shades series of erotic romance novels, which spawned a multimedia franchise including a film trilogy of the same name. Prior to this, she wrote the Twilight fan fiction \"Master of the Universe\" that served as the basis for the Fifty Shades series under the web name Snowqueens Icedragon. In 2019 she published her first book unconnected with the fictional world of Fifty Shades, The Mister, to negative critical reaction.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/E._L._James_-_2019_%28cropped%29.jpg",
+    "link": "https://en.wikipedia.org/wiki/E._L._James"
+  },
+  {
+    "author": "Charles Duhigg",
+    "summary": "Charles Duhigg is an American journalist and non-fiction author. He was a reporter for The New York Times. He currently writes for The New Yorker Magazine and is the author of three books on habits and productivity, titled The Power of Habit: Why We Do What We Do in Life and Business, Smarter Faster Better and Supercommunicators: How to Unlock the Secret Language of Connection. In 2013, Duhigg was the recipient, as part of a team of New York Times reporters, of the Pulitzer Prize for Explanatory Reporting for a series of ten articles on the business practices of Apple and other technology companies.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/4/43/Charles_Duhigg_at_the_Leading_Through_Excellence_summit_in_2013_%28cropped%29.jpg",
+    "link": "https://en.wikipedia.org/wiki/Charles_Duhigg"
+  },
+  {
+    "author": "Toni Morrison",
+    "summary": "Chloe Anthony Wofford Morrison, known as Toni Morrison, was an American novelist and editor. Her first novel, The Bluest Eye, was published in 1970. The critically acclaimed Song of Solomon (1977) brought her national attention and won the National Book Critics Circle Award. In 1988, Morrison won the Pulitzer Prize for Beloved (1987); she was awarded the Nobel Prize in Literature in 1993.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/3/3a/Toni_Morrison.jpg",
+    "link": "https://en.wikipedia.org/wiki/Toni_Morrison"
+  },
+  {
+    "author": "Dan Brown",
+    "summary": "Daniel Gerhard Brown is an American author best known for his thriller novels, including the Robert Langdon novels Angels & Demons (2000), The Da Vinci Code (2003), The Lost Symbol (2009), Inferno (2013), and Origin (2017). His novels are treasure hunts that usually take place over a period of 24 hours. They feature recurring themes of cryptography, art, and conspiracy theories. His books have been translated into 57 languages and, as of 2012, have sold over 200 million copies. Three of them, Angels & Demons, The Da Vinci Code, and Inferno, have been adapted into films, while one of them, The Lost Symbol, was adapted into a television show.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/8/8b/Dan_Brown_bookjacket_cropped.jpg",
+    "link": "https://en.wikipedia.org/wiki/Dan_Brown"
+  },
+  {
+    "author": "Kazuo Ishiguro",
+    "summary": "Sir Kazuo Ishiguro   is a Japanese-born British novelist, screenwriter, musician, and short-story writer. He is one of the most critically acclaimed contemporary fiction authors writing in English, having been awarded the 2017 Nobel Prize in Literature. In its citation, the Swedish Academy described Ishiguro as a writer \"who, in novels of great emotional force, has uncovered the abyss beneath our illusory sense of connection with the world\".",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/c/c9/Kazuo_Ishiguro_in_2017_01.jpg",
+    "link": "https://en.wikipedia.org/wiki/Kazuo_Ishiguro"
+  },
+  {
+    "author": "Cheryl Strayed",
+    "summary": "Cheryl Strayed is an American writer and podcast host. She has written four books: the novel Torch (2006) and the nonfiction books Wild: From Lost to Found on the Pacific Crest Trail (2012), Tiny Beautiful Things (2012) and Brave Enough (2015). Wild, the story of Strayed's 1995 hike up the Pacific Crest Trail, is an international bestseller and was adapted into the 2014 Academy Award-nominated film Wild.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/5/50/Cheryl_strayed_2012.jpg",
+    "link": "https://en.wikipedia.org/wiki/Cheryl_Strayed"
+  },
+  {
+    "author": "Harper Lee",
+    "summary": "Nelle Harper Lee was an American novelist whose 1960 novel To Kill a Mockingbird won the 1961 Pulitzer Prize and became a classic of modern American literature. She assisted her close friend Truman Capote in his research for the book In Cold Blood (1966). Her second and final novel, Go Set a Watchman, was an earlier draft of Mockingbird, set at a later date, that was published in July 2015 as a sequel.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/b/b5/Photo_portrait_of_Harper_Lee_%28To_Kill_a_Mockingbird_dust_jacket%2C_1960%29.jpg",
+    "link": "https://en.wikipedia.org/wiki/Harper_Lee"
+  },
+  {
+    "author": "Jane Austen",
+    "summary": "Jane Austen was an English novelist known primarily for her six novels, which implicitly interpret, critique, and comment upon the British landed gentry at the end of the 18th century. Austen's plots often explore the dependence of women on marriage for the pursuit of favourable social standing and economic security. Her works are an implicit critique of the novels of sensibility of the second half of the 18th century and are part of the transition to 19th-century literary realism. Her deft use of social commentary, realism and biting irony have earned her acclaim among critics and scholars.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/c/cc/CassandraAusten-JaneAusten%28c.1810%29_hires.jpg",
+    "link": "https://en.wikipedia.org/wiki/Jane_Austen"
+  },
+  {
+    "author": "Robert Louis Stevenson",
+    "summary": "Robert Louis Stevenson was a Scottish novelist, essayist, poet and travel writer. He is best known for works such as Treasure Island, Strange Case of Dr Jekyll and Mr Hyde, Kidnapped and A Child's Garden of Verses.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/7/7a/Robert_Louis_Stevenson_by_Henry_Walter_Barnett_bw.jpg",
+    "link": "https://en.wikipedia.org/wiki/Robert_Louis_Stevenson"
+  },
+  {
+    "author": "F. Scott Fitzgerald",
+    "summary": "Francis Scott Key Fitzgerald was an American novelist, essayist, and short story writer. He is best known for his novels depicting the flamboyance and excess of the Jazz Age, a term he popularized in his short story collection Tales of the Jazz Age. During his lifetime, he published four novels, four story collections, and 164 short stories. Although he achieved temporary popular success and fortune in the 1920s, Fitzgerald received critical acclaim only after his death and is now widely regarded as one of the greatest American writers of the 20th century.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/8/87/F._Scott_Fitzgerald_%281929_photo_portrait_by_Nickolas_Muray%29_Cropped.jpg",
+    "link": "https://en.wikipedia.org/wiki/F._Scott_Fitzgerald"
+  },
+  {
+    "author": "Selena Smith",
+    "summary": "",
+    "image": "",
+    "link": ""
+  },
+  {
+    "author": "Ken Burns",
+    "summary": "Kenneth Lauren Burns is an American filmmaker known for his documentary films and television series, many of which chronicle American history and culture. His work is often produced in association with WETA-TV or the National Endowment for the Humanities and distributed by PBS.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/2/28/2018KenBurns.jpg",
+    "link": "https://en.wikipedia.org/wiki/Ken_Burns"
+  },
+  {
+    "author": "Herman Melville",
+    "summary": "Herman Melville was an American novelist, short story writer, and poet of the American Renaissance period. Among his best-known works are Moby-Dick (1851); Typee (1846), a romanticized account of his experiences in Polynesia; and Billy Budd, Sailor, a posthumously published novella. At the time of his death, Melville was no longer well known to the public, but the 1919 centennial of his birth was the starting point of a Melville revival. Moby-Dick eventually would be considered one of the great American novels.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/e/e8/Herman_Melville_by_Joseph_O_Eaton.jpg",
+    "link": "https://en.wikipedia.org/wiki/Herman_Melville"
+  },
+  {
+    "author": "Charles Dickens",
+    "summary": "Charles John Huffam Dickens was an English novelist, journalist, short story writer and social critic. He created some of literature's best-known fictional characters, and is regarded by many as the greatest novelist of the Victorian era. His works enjoyed unprecedented popularity during his lifetime and, by the 20th century, critics and scholars had recognised him as a literary genius. His novels and short stories are widely read today.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/a/aa/Dickens_Gurney_head.jpg",
+    "link": "https://en.wikipedia.org/wiki/Charles_Dickens"
+  },
+  {
+    "author": "William Shakespeare",
+    "summary": "William Shakespeare was an English playwright, poet and actor. He is widely regarded as the greatest writer in the English language and the world's pre-eminent dramatist. He is often called England's national poet and the \"Bard of Avon\". His extant works, including collaborations, consist of some 39 plays, 154 sonnets, three long narrative poems and a few other verses, some of uncertain authorship. His plays have been translated into every major living language and are performed more often than those of any other playwright. Shakespeare remains arguably the most influential writer in the English language, and his works continue to be studied and reinterpreted.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/2/21/William_Shakespeare_by_John_Taylor%2C_edited.jpg",
+    "link": "https://en.wikipedia.org/wiki/William_Shakespeare"
+  },
+  {
+    "author": "Margaret Atwood",
+    "summary": "Margaret Eleanor Atwood is a Canadian novelist, poet, and literary critic. Since 1961, she has published 18 books of poetry, 18 novels, 11 books of nonfiction, nine collections of short fiction, eight children's books, two graphic novels, and a number of small press editions of both poetry and fiction. Her best-known work is the 1985 dystopian novel The Handmaid's Tale. Atwood has won numerous awards and honors for her writing, including two Booker Prizes, the Arthur C. Clarke Award, the Governor General's Award, the Franz Kafka Prize, Princess of Asturias Awards, and the National Book Critics and PEN Center USA Lifetime Achievement Awards. A number of her works have been adapted for film and television.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/a/a0/Margaret_Atwood_%2852161564186%29_%28cropped%29.jpg",
+    "link": "https://en.wikipedia.org/wiki/Margaret_Atwood"
+  },
+  {
+    "author": "Frances Hodgson Burnett",
+    "summary": "Frances Eliza Hodgson Burnett was a British-American novelist and playwright. She is best known for the three children's novels Little Lord Fauntleroy (1886), A Little Princess (1905), and The Secret Garden (1911).",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/db/Frances_Burnett.jpg",
+    "link": "https://en.wikipedia.org/wiki/Frances_Hodgson_Burnett"
+  },
+  {
+    "author": "James Dashner",
+    "summary": "James Smith Dashner is an American writer known for speculative fiction. Many of his books are primarily aimed at children or young adults. He is best known for The Maze Runner series and the young adult fantasy series The 13th Reality. His 2008 novel The Journal of Curious Letters, first in the series, was one of the annual Borders Original Voices picks.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/5/55/James_Dashner_%2814595088277%29.jpg",
+    "link": "https://en.wikipedia.org/wiki/James_Dashner"
+  },
+  {
+    "author": "William Golding",
+    "summary": "Sir William Gerald Golding was a British novelist, playwright, and poet. Best known for his debut novel Lord of the Flies (1954), he published another twelve volumes of fiction in his lifetime. In 1980, he was awarded the Booker Prize for Rites of Passage, the first novel in what became his sea trilogy, To the Ends of the Earth. He was awarded the 1983 Nobel Prize in Literature.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/f/f9/William_Golding_1983.jpg",
+    "link": "https://en.wikipedia.org/wiki/William_Golding"
+  },
+  {
+    "author": "Ray Bradbury",
+    "summary": "Ray Douglas Bradbury was an American author and screenwriter. One of the most celebrated 20th-century American writers, he worked in a variety of genres, including fantasy, science fiction, horror, mystery, and realistic fiction.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/e/e2/Ray_Bradbury_1959.JPG",
+    "link": "https://en.wikipedia.org/wiki/Ray_Bradbury"
+  },
+  {
+    "author": "Gabriel Garcia Marquez",
+    "summary": "Gabriel José de la Concordia García Márquez was a Colombian novelist, short-story writer, screenwriter, and journalist, known affectionately as Gabo or Gabito throughout Latin America. Considered one of the most significant authors of the 20th century, particularly in the Spanish language, he was awarded the 1972 Neustadt International Prize for Literature and the 1982 Nobel Prize in Literature. He pursued a self-directed education that resulted in leaving law school for a career in journalism. From early on he showed no inhibitions in his criticism of Colombian and foreign politics. In 1958, he married Mercedes Barcha Pardo; they had two sons, Rodrigo and Gonzalo.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/0/0f/Gabriel_Garcia_Marquez.jpg",
+    "link": "https://en.wikipedia.org/wiki/Gabriel_Garc%C3%ADa_M%C3%A1rquez"
+  },
+  {
+    "author": "Bessel A. Van der Kolk",
+    "summary": "",
+    "image": "",
+    "link": ""
+  },
+  {
+    "author": "Max Barry",
+    "summary": "Max Barry is an Australian author. He also maintains a blog on various topics, including politics. When he published his first novel, Syrup, he spelled his name \"Maxx\", but subsequently has used \"Max\".",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/3/3e/Max_Barry_1.JPG",
+    "link": "https://en.wikipedia.org/wiki/Max_Barry"
+  },
+  {
+    "author": "David Allen",
+    "summary": "David or Dave Allen may refer to:",
+    "image": "",
+    "link": "https://en.wikipedia.org/wiki/David_Allen"
+  },
+  {
+    "author": "Celeste Ng",
+    "summary": "Celeste Ng is an American writer and novelist. She has released many short stories that have been published in a variety of literary journals. Ng's first novel, Everything I Never Told You, released on June 26, 2014, won the Amazon Book of the Year award as well as praise from critics. Ng's short story Girls at Play won a Pushcart Prize in 2012, and was a 2015 recipient of an Alex Award. Her second novel, Little Fires Everywhere, was published in 2017. The TV-miniseries based on the book premiered in 2020. Ng received a Guggenheim Fellowship in 2020. Her most recent novel, Our Missing Hearts, was released on October 4, 2022.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/0/0c/Celeste_Ng_at_2018_National_Book_Festival_%28cropped%29.jpg",
+    "link": "https://en.wikipedia.org/wiki/Celeste_Ng"
+  },
+  {
+    "author": "Matt Haig",
+    "summary": "Matt Haig is an English author and journalist. He has written both fiction and non-fiction books for children and adults, often in the speculative fiction genre.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Matt_Haig.jpeg/2448px-Matt_Haig.jpeg",
+    "link": "https://en.wikipedia.org/wiki/Matt_Haig"
+  },
+  {
+    "author": "Daniel DiPiazza",
+    "summary": "",
+    "image": "",
+    "link": ""
+  },
+  {
+    "author": "Don DeLillo",
+    "summary": "Donald Richard \"Don\" DeLillo is an American novelist, short story writer, playwright, screenwriter and essayist. His works have covered subjects as diverse as television, nuclear war, the complexities of language, art, the advent of the Digital Age, mathematics, politics, economics, and sports.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/de/Don_DeLillo%2C_author.jpg",
+    "link": "https://en.wikipedia.org/wiki/Don_DeLillo"
+  },
+  {
+    "author": "Maureen Callahan",
+    "summary": "Maureen Callahan is an American columnist for the Daily Mail known for her opinion pieces regarding politics, feminism, pop culture, and current events.",
+    "image": "",
+    "link": "https://en.wikipedia.org/wiki/Maureen_Callahan"
+  },
+  {
+    "author": "Witold Szablowski",
+    "summary": "Witold Szabłowski is a Polish journalist and author.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/e/ee/Witold_Szab%C5%82owski_2015.jpg",
+    "link": "https://en.wikipedia.org/wiki/Witold_Szab%C5%82owski"
+  },
+  {
+    "author": "Angie Thomas",
+    "summary": "Angie Thomas is an American young adult author, best known for writing The Hate U Give (2017). Her second young adult novel, On the Come Up, was released on February 25, 2019.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/1/17/Angie_Thomas_on_Valder_Beebe_Show_2019.jpg",
+    "link": "https://en.wikipedia.org/wiki/Angie_Thomas"
+  },
+  {
+    "author": "Christina Lauren",
+    "summary": "Christina Lauren, the combined pen name of Christina Hobbs and Lauren Billings, is an American author duo of contemporary fiction, teen fiction and romance novels.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/c/c1/Lauren_Billings_and_Christina_Hobbs.jpg",
+    "link": "https://en.wikipedia.org/wiki/Christina_Lauren"
+  },
+  {
+    "author": "Madeleine Roux",
+    "summary": "Madeleine Roux is an American fiction author. She has written several young adult paranormal and horror fiction series, including the Asylum series. She has also written two standalone adult science fiction novels along with several novels for licensed properties such as World of Warcraft and Dungeons & Dragons.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/2/2d/Madeleine_Roux_en_la_Feria_-LAinBA.jpg",
+    "link": "https://en.wikipedia.org/wiki/Madeleine_Roux"
+  },
+  {
+    "author": "Daniel Silva",
+    "summary": "Daniel, Dan, Danny or Dany Silva may refer to:",
+    "image": "",
+    "link": "https://en.wikipedia.org/wiki/Daniel_Silva"
+  },
+  {
+    "author": "Stephenie Meyer",
+    "summary": "Stephenie Meyer is an American novelist and film producer known for writing the vampire romance series Twilight, which has sold over 160 million copies, with translations into 37 different languages. She was the bestselling author of 2008 and 2009 in the U.S., having sold over 29 million books in 2008 and 26.5 million in 2009. She received the 2009 Children's Book of the Year award from the British Book Awards for Breaking Dawn, the Twilight series' finale.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/6/63/Stephenie_Meyer_by_Gage_Skidmore.jpg",
+    "link": "https://en.wikipedia.org/wiki/Stephenie_Meyer"
+  },
+  {
+    "author": "John Green",
+    "summary": "John Michael Green is an American author, YouTuber, podcaster, and philanthropist. His books have more than 50 million copies in print worldwide, including The Fault in Our Stars (2012), which is one of the best-selling books of all time. Green's rapid rise to fame and idiosyncratic voice are credited with creating a major shift in the young adult fiction market. Green is also well known for his work in online video, most notably his YouTube ventures with his brother Hank Green.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/b/b9/John_Green_2020_%28C6txQ5yn5S8%29.jpg",
+    "link": "https://en.wikipedia.org/wiki/John_Green"
+  },
+  {
+    "author": "J. K. Rowling",
+    "summary": "Joanne Rowling, known by her pen name J. K. Rowling, is a British author and philanthropist. She is the author of Harry Potter, a seven-volume fantasy series published from 1997 to 2007. The series has sold over 600 million copies, been translated into 84 languages, and spawned a global media franchise including films and video games. The Casual Vacancy (2012) was her first novel for adults. She writes Cormoran Strike, an ongoing crime fiction series, under the alias Robert Galbraith.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/5/5d/J._K._Rowling_2010.jpg",
+    "link": "https://en.wikipedia.org/wiki/J._K._Rowling"
+  },
+  {
+    "author": "Sherman Alexie",
+    "summary": "Sherman Joseph Alexie Jr. is a Native American novelist, short story writer, poet, screenwriter, and filmmaker. His writings draw on his experiences as an Indigenous American with ancestry from several tribes. He grew up on the Spokane Indian Reservation and now lives in Seattle, Washington.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/de/Red-ink-alexie-matsunaga-2016-3507_%2827727650011%29_%28cropped%29.jpg",
+    "link": "https://en.wikipedia.org/wiki/Sherman_Alexie"
+  },
+  {
+    "author": "Carl Deuker",
+    "summary": " Carl Deuker is an author of young adult novels.",
+    "image": "",
+    "link": "https://en.wikipedia.org/wiki/Carl_Deuker"
+  },
+  {
+    "author": "Hillary Rodham Clinton",
+    "summary": "Hillary Diane Rodham Clinton is an American politician and diplomat who served as the 67th United States secretary of state in the administration of Barack Obama from 2009 to 2013, as a U.S. senator representing New York from 2001 to 2009, and as the first lady of the United States to former president Bill Clinton from 1993 to 2001. A member of the Democratic Party, she was the party's nominee in the 2016 presidential election, becoming the first woman to win a presidential nomination by a major U.S. political party and the first woman to win the popular vote for U.S. president.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/e/ec/Hillary_Clinton_by_Gage_Skidmore_4_%28cropped%29.jpg",
+    "link": "https://en.wikipedia.org/wiki/Hillary_Clinton"
+  },
+  {
+    "author": "John Ronald Reuel Tolkien",
+    "summary": "John Ronald Reuel Tolkien was an English writer and philologist. He was the author of the high fantasy works The Hobbit and The Lord of the Rings.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d4/J._R._R._Tolkien%2C_ca._1925.jpg",
+    "link": "https://en.wikipedia.org/wiki/J._R._R._Tolkien"
+  },
+  {
+    "author": "Agatha Christie",
+    "summary": "Dame Agatha Mary Clarissa Christie, Lady Mallowan, was an English writer known for her 66 detective novels and 14 short story collections, particularly those revolving around fictional detectives Hercule Poirot and Miss Marple. She also wrote the world's longest-running play, the murder mystery The Mousetrap, which has been performed in the West End of London since 1952. A writer during the \"Golden Age of Detective Fiction\", Christie has been called the \"Queen of Crime\"—a moniker which is now trademarked by her estate—or the \"Queen of Mystery\". She also wrote six novels under the pseudonym Mary Westmacott. In 1971, she was made a Dame (DBE) by Queen Elizabeth II for her contributions to literature. Guinness World Records lists Christie as the best-selling fiction writer of all time, her novels having sold more than two billion copies.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/c/cf/Agatha_Christie.png",
+    "link": "https://en.wikipedia.org/wiki/Agatha_Christie"
+  },
+  {
+    "author": "Rob Scotton",
+    "summary": "",
+    "image": "",
+    "link": ""
+  },
+  {
+    "author": "Walter Isaacson",
+    "summary": "Walter Seff Isaacson is an American historian and journalist best known for having written biographies of important public figures, including Benjamin Franklin, Albert Einstein, Steve Jobs, and Elon Musk. As of 2024, Isaacson is a professor at Tulane University and, since 2018, an interviewer for the PBS and CNN news show Amanpour & Company.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/7/78/Walter_Isaacson_VF_2012_Shankbone_2.JPG",
+    "link": "https://en.wikipedia.org/wiki/Walter_Isaacson"
+  },
+  {
+    "author": "Patrick Bishop",
+    "summary": "\nSir Frank Patrick Bishop, MBE was a British advertising copywriter, barrister, businessman and Conservative Party politician.",
+    "image": "",
+    "link": "https://en.wikipedia.org/wiki/Patrick_Bishop"
+  },
+  {
+    "author": "Joselin Linder",
+    "summary": "",
+    "image": "",
+    "link": ""
+  },
+  {
+    "author": "Bruce Henderson",
+    "summary": "Bruce Doolin Henderson was an American businessman and management expert. He founded Boston Consulting Group (BCG) in 1963 in Boston, Massachusetts and headed the firm as the president and CEO until 1980. He continued as chairman of BCG until 1985.",
+    "image": "https://upload.wikimedia.org/wikipedia/en/4/4a/Bruce_Doolin_Henderson.jpg",
+    "link": "https://en.wikipedia.org/wiki/Bruce_Henderson"
+  },
+  {
+    "author": "Kate Elizabeth Russell",
+    "summary": "Kate Elizabeth Russell is an American author. Her debut novel, My Dark Vanessa, was published in 2020 and became a national bestseller.",
+    "image": "",
+    "link": "https://en.wikipedia.org/wiki/Kate_Elizabeth_Russell"
+  },
+  {
+    "author": "Lynsay Sands",
+    "summary": "Lynsay Sands is a Canadian author of over 80 books. She is noted for the humor she injects into her stories. While she writes both historical and paranormal romance novels, she is best known for her Argeneau series about a modern family of vampires.",
+    "image": "",
+    "link": "https://en.wikipedia.org/wiki/Lynsay_Sands"
+  },
+  {
+    "author": "Becky Albertalli",
+    "summary": "Rebecca Albertalli is an American author of young adult fiction and former psychologist. She is best known for her 2015 debut novel, Simon vs. the Homo Sapiens Agenda, which was adapted into the 2018 film Love, Simon and inspired the spin-off television series Love, Victor. Albertalli has subsequently published seven additional novel-length works of young adult fiction, along with 2020's novella Love, Creekwood, from which Albertalli has donated all proceeds to The Trevor Project.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/6/6d/Becky-albertalli.jpg",
+    "link": "https://en.wikipedia.org/wiki/Becky_Albertalli"
+  },
+  {
+    "author": "James S. Murray",
+    "summary": "James Stephen \"Murr\" Murray is an American improvisational comedian, author, and actor from New York. He is a member of The Tenderloins, a comedy troupe also consisting of Brian Quinn, Sal Vulcano, and formerly Joe Gatto. Along with the other members of The Tenderloins, he stars in the television series Impractical Jokers, which premiered December 15, 2011, on TruTV.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/7/78/James_Murray_Photo_Op_GalaxyCon_Richmond_2024.jpg",
+    "link": "https://en.wikipedia.org/wiki/James_Murray_(comedian)"
+  },
+  {
+    "author": "Darren Wearmouth",
+    "summary": "",
+    "image": "",
+    "link": ""
+  },
+  {
+    "author": "Beth Cato",
+    "summary": "Beth Cato is an American speculative fiction writer and poet, best known for her Clockwork Dagger and Blood of Earth series. She usually writes as Beth Cato, though in one instance she used the byline Beth L. Cato.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/4/44/Beth_Cato_by_Gage_Skidmore.jpg",
+    "link": "https://en.wikipedia.org/wiki/Beth_Cato"
+  },
+  {
+    "author": "Wendy Pearlman",
+    "summary": "",
+    "image": "",
+    "link": ""
+  },
+  {
+    "author": "Eric Carle",
+    "summary": "Eric Carle is an American author, designer and illustrator of children's books. His picture book The Very Hungry Caterpillar, first published in 1969, has been translated into more than 66 languages and sold more than 50 million copies. Carle's career as an illustrator and children's book author accelerated after he collaborated on Brown Bear, Brown Bear, What Do You See?. Carle illustrated more than 70 books, most of which he also wrote, and more than 145 million copies of his books have been sold around the world.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/0/04/Eric_Carle_kinderboekenschrijver%2C_1988_-_28_%28cropped%29.jpg",
+    "link": "https://en.wikipedia.org/wiki/Eric_Carle"
+  },
+  {
+    "author": "Faye Kellerman",
+    "summary": " Faye Marder Kellerman is an American writer of mystery novels, in particular the \"Peter Decker/Rina Lazarus\" series, as well as three nonseries books, The Quality of Mercy, Moon Music, and Straight into Darkness.",
+    "image": "",
+    "link": "https://en.wikipedia.org/wiki/Faye_Kellerman"
+  },
+  {
+    "author": "Beverly Jenkins",
+    "summary": "Beverly Jenkins is an American author of historical and contemporary romance novels with a particular focus on 19th-century African American life. Jenkins was a 2013 NAACP Image Award nominee and, in 1999, was voted one of the Top 50 Favorite African American writers of the 20th century by the African American Literature Book Club. Jenkins's historical romances are set during a period of African American history that she believes is often overlooked. This made it difficult to break into publishing because publishers weren't sure what to do with stories that involved African Americans but not slavery.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/7/7d/Beverly_Jenkins.jpg",
+    "link": "https://en.wikipedia.org/wiki/Beverly_Jenkins"
+  },
+  {
+    "author": "Angela Garbes",
+    "summary": "Angela Garbes is an American author. She has written two nonfiction books about motherhood: Like a Mother: A Feminist Journey through the Science and Culture of Pregnancy (2018) and Essential Labor: Mothering as Social Change (2022). Garbes is the daughter of Filipino immigrants. She began her career as a food writer for The Stranger, an alternative newspaper in Seattle.",
+    "image": "",
+    "link": "https://en.wikipedia.org/wiki/Angela_Garbes"
+  },
+  {
+    "author": "Michael Crichton",
+    "summary": "John Michael Crichton was an American author, screenwriter and filmmaker. His books have sold over 200 million copies worldwide, and over a dozen have been adapted into films. His literary works heavily feature technology and are usually within the science fiction, techno-thriller, and medical fiction genres. Crichton’s novels often explore human technological advancement and attempted dominance over nature, both with frequently catastrophic results; many of his works are cautionary tales, especially regarding themes of biotechnology. Several of his stories center specifically around themes of genetic modification, hybridization, paleontology and/or zoology. Many feature medical or scientific underpinnings, reflective of his own medical training and scientific background.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/a/af/MichaelCrichton_2.jpg",
+    "link": "https://en.wikipedia.org/wiki/Michael_Crichton"
+  },
+  {
+    "author": "Kim Tomsic",
+    "summary": "",
+    "image": "",
+    "link": ""
+  },
+  {
+    "author": "Kate Hudson",
+    "summary": "Kate Garry Hudson is an American actress and singer. She has received various accolades, including a Golden Globe Award and a nomination for an Academy Award.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/6/61/Kate_Hudson_%288033413872%29_%28cropped%29.jpg",
+    "link": "https://en.wikipedia.org/wiki/Kate_Hudson"
+  },
+  {
+    "author": "Jenny Colgan",
+    "summary": "Jenny Colgan is a Scottish writer of romantic comedy fiction and science fiction. She has written for the Doctor Who line of stories. She writes under her own name and also using the pseudonyms Jane Beaton and J. T. Colgan.",
+    "image": "",
+    "link": "https://en.wikipedia.org/wiki/Jenny_Colgan"
+  },
+  {
+    "author": "Kate Quinn",
+    "summary": "Kate Quinn is an American writer, known for her works of historical fiction.",
+    "image": "",
+    "link": "https://en.wikipedia.org/wiki/Kate_Quinn"
+  },
+  {
+    "author": "Stephanie Dray",
+    "summary": "",
+    "image": "",
+    "link": ""
+  },
+  {
+    "author": "Laura Kamoie",
+    "summary": "Laura Croghan Kamoie is an American historian and author. She writes historical fiction under her own name and romance under the name Laura Kaye.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/e/ec/Laura_Kamoie_170770.jpg",
+    "link": "https://en.wikipedia.org/wiki/Laura_Kamoie"
+  },
+  {
+    "author": "E. Knight",
+    "summary": "",
+    "image": "",
+    "link": ""
+  },
+  {
+    "author": "Sophie Perinot",
+    "summary": "",
+    "image": "",
+    "link": ""
+  },
+  {
+    "author": "Heather Webb",
+    "summary": "",
+    "image": "",
+    "link": ""
+  },
+  {
+    "author": "Aleksandr I. Solzhenitsyn",
+    "summary": "Aleksandr Isayevich Solzhenitsyn was a Russian author and Soviet dissident who helped to raise global awareness of political repression in the Soviet Union, especially the Gulag prison system. He was awarded the 1970 Nobel Prize in Literature \"for the ethical force with which he has pursued the indispensable traditions of Russian literature\". His non-fiction work The Gulag Archipelago \"amounted to a head-on challenge to the Soviet state\" and sold tens of millions of copies.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/8/8d/Aleksandr_Solzhenitsyn_1974crop.jpg",
+    "link": "https://en.wikipedia.org/wiki/Aleksandr_Solzhenitsyn"
+  },
+  {
+    "author": "Ruby Warrington",
+    "summary": "",
+    "image": "",
+    "link": ""
+  },
+  {
+    "author": "Rey Terciero",
+    "summary": "Rex Ogle is an American author and editor who has published more than 100 books, including those written under various pseudonyms, such as Trey King, Honest Lee, and Rey Terciero. In addition to writing and editing for DC Comics and Marvel Comics, Ogle has written a number of graphic novels and memoirs, including Free Lunch.",
+    "image": "",
+    "link": "https://en.wikipedia.org/wiki/Rex_Ogle"
+  },
+  {
+    "author": "Wendy Corsi Staub",
+    "summary": "Wendy Corsi Staub is an American writer of suspense novels and young adult fiction. She has written under her own name as well as Wendy Brody, Wendy Markham, and Wendy Morgan.",
+    "image": "",
+    "link": "https://en.wikipedia.org/wiki/Wendy_Corsi_Staub"
+  },
+  {
+    "author": "Justus Rosenberg",
+    "summary": "Justus Rosenberg was a literature professor who spent most of his life teaching in the United States, ending his career as a professor emeritus of languages and literature at Bard College. Before that, as a teenager he began playing a role in saving many lives when the Nazis overran France, working first as part of a French-American network organized to help anti-Nazi intellectuals and artists escape from Vichy France to the United States, and later as a member of the French Resistance during World War II, providing assistance as well to the US Army.",
+    "image": "",
+    "link": "https://en.wikipedia.org/wiki/Justus_Rosenberg"
+  },
+  {
+    "author": "Boris Fishman",
+    "summary": "Boris Fishman is an American writer. He is the author of the novels Don’t Let My Baby Do Rodeo (2016) and A Replacement Life (2014), and Savage Feast (2019).",
+    "image": "",
+    "link": "https://en.wikipedia.org/wiki/Boris_Fishman"
+  },
+  {
+    "author": "Adam Silvera",
+    "summary": "Adam Silvera is an American author of young adult fiction novels, known for his bestselling novels They Both Die at the End, More Happy Than Not, and History Is All You Left Me.",
+    "image": "",
+    "link": "https://en.wikipedia.org/wiki/Adam_Silvera"
+  },
+  {
+    "author": "Charlie Mackesy",
+    "summary": "Charles Piers Mackesy is a British artist, illustrator, and the author of The Boy, the Mole, the Fox and the Horse (2019).",
+    "image": "",
+    "link": "https://en.wikipedia.org/wiki/Charlie_Mackesy"
+  },
+  {
+    "author": "Eric Alperin",
+    "summary": "",
+    "image": "",
+    "link": ""
+  },
+  {
+    "author": "Deborah Stoll",
+    "summary": "",
+    "image": "",
+    "link": ""
+  },
+  {
+    "author": "Lisa Berne",
+    "summary": "",
+    "image": "",
+    "link": ""
+  },
+  {
+    "author": "Becca Levy",
+    "summary": "Becca R. Levy is a professor of Epidemiology at Yale School of Public Health and Professor of Psychology at Yale University. She is a leading researcher in the fields of social gerontology and psychology of aging. She is credited with creating the field of how age stereotypes, which are assimilated from the culture, impact the health of older individuals. The Dean of Columbia School of Public Health describes Levy as \"a pioneer\" in the \"growing body of impressive research showing that our attitudes toward aging affect our health, our resilience in the face of adversity, and our very survival.\"",
+    "image": "",
+    "link": "https://en.wikipedia.org/wiki/Becca_Levy"
+  },
+  {
+    "author": "Becca Levy, PhD",
+    "summary": "",
+    "image": "",
+    "link": ""
+  },
+  {
+    "author": "Eugene H. Peterson",
+    "summary": "Eugene Hoiland Peterson was an American Presbyterian minister, scholar, theologian, author, and poet. He wrote over 30 books, including the Gold Medallion Book Award–winner The Message: The Bible in Contemporary Language, an idiomatic paraphrasing commentary and translation of the Bible into modern American English using a dynamic equivalence translation approach.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/b/bd/Eugene_Peterson_%28cropped%29.jpg",
+    "link": "https://en.wikipedia.org/wiki/Eugene_H._Peterson"
+  },
+  {
+    "author": "Neil Gaiman",
+    "summary": "Neil Richard MacKinnon Gaiman is an English author of short fiction, novels, comic books, graphic novels, audio theatre, and screenplays. His works include the comic book series The Sandman and the novels Good Omens, Stardust, Anansi Boys, American Gods, Coraline, and The Graveyard Book. He co-created the TV series adaptations of Good Omens and The Sandman.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/b/bc/Kyle-cassidy-neil-gaiman-April-2013.jpg",
+    "link": "https://en.wikipedia.org/wiki/Neil_Gaiman"
+  },
+  {
+    "author": "Lily Bailey",
+    "summary": "",
+    "image": "",
+    "link": ""
+  },
+  {
+    "author": "Jack Welch",
+    "summary": "John Francis Welch Jr. was an American business executive, chemical engineer, and writer. He was Chairman and CEO of General Electric (GE) between 1981 and 2001.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/2/2d/JackWelchApril2012.jpg",
+    "link": "https://en.wikipedia.org/wiki/Jack_Welch"
+  },
+  {
+    "author": "Suzy Welch",
+    "summary": "Suzy Welch is an American author, television commentator, business advisor, and public speaker. She is also the co-author of the business books Winning, published in 2005, and The Real Life MBA, published in 2015.",
+    "image": "",
+    "link": "https://en.wikipedia.org/wiki/Suzy_Welch"
+  },
+  {
+    "author": "Veronica Roth",
+    "summary": "Veronica Anne Roth is an American novelist and short story writer, known for her bestselling Divergent trilogy which has sold more than 35 million copies worldwide.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/6/67/Veronica_Roth_March_18%2C_2014_%28cropped%29.jpg",
+    "link": "https://en.wikipedia.org/wiki/Veronica_Roth"
+  },
+  {
+    "author": "David Perlmutter",
+    "summary": "David Perlmutter is an American celebrity doctor, author, low-carbohydrate diet advocate and promoter of functional medicine.",
+    "image": "",
+    "link": "https://en.wikipedia.org/wiki/David_Perlmutter"
+  },
+  {
+    "author": "Kristin Loberg",
+    "summary": "",
+    "image": "",
+    "link": ""
+  },
+  {
+    "author": "Katherine Applegate",
+    "summary": "Katherine Alice Applegate, known professionally as K. A. Applegate, is an American young adult and children's fiction writer, best known as the author of the Animorphs, Remnants, and Everworld book series. She won the 2013 Newbery Medal for her 2012 children's novel The One and Only Ivan. Applegate's most popular books are science fiction, fantasy, and adventure novels. She won the Best New Children's Book Series Award in 1997 in Publishers Weekly. Her book Home of the Brave has won several awards. She also wrote a chapter book series in 2008–09 called Roscoe Riley Rules.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/0/0e/Katherine_applegate_2013.jpg",
+    "link": "https://en.wikipedia.org/wiki/Katherine_Applegate"
+  }
+]

@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trading Page</title>
+    <link rel="icon" href="../media/bookIcon.png" type="image/png" />
+    <link href="../CSS/GeneralStyles.css" rel="stylesheet" />
+    <link href="../CSS/tradingStyles.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/microsoft-signalr/8.0.7/signalr.js"></script>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/firebase/8.2.2/firebase-app.min.js"
+      defer
+    ></script>
+    <!--TODO: Add SDKs for Firebase products that you want to use. https://cdnout.com/cdn/firebase@8.2.2-->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/firebase/8.2.2/firebase-analytics.min.js"
+      defer
+    ></script>
+    <!--**** Remember to add the database script ***-->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/firebase/8.2.2/firebase-database.min.js"
+      defer
+    ></script>
+    <!--Your web app's Firebase configuration-->
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.js"
+      integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+      crossorigin="anonymous"
+      defer
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <!-- Animate -->
+    <script type="module" src="../script/ajaxCalls.js"></script>
+    <script type="module" src="../script/generalScript.js" defer></script>
+    <script type="module" src="../script/tradingScript.js" defer></script>
+    <script type="module" src="../script/accessibility.js"></script>
+    <script type="module" src="../script/signalR.js" defer></script>
+    <!-- <script src="../script/script.js" defer></script> -->
+  </head>
+  <body>
+    <div id="HolderOfAll">
+      <div id="TopNavBar">
+        <div class="TopNavBar__Desktop">
+          <div class="TopNavBar__Desktop__left">
+            <div class="tooltip-container">
+              <div class="HomeBttnContainer HomeBound">
+                <img src="../media/house.svg" class="Icon" />
+                <div class="tooltip">Home Page</div>
+              </div>
+            </div>
+            <div class="tooltip-container">
+              <div class="LibraryBttnContainer LibraryBound">
+                <img src="../media/library-big.svg" class="Icon" />
+                <div class="tooltip">My Library</div>
+              </div>
+            </div>
+            <div class="tooltip-container">
+              <div class="MenuBttnContainer">
+                <img src="../media/menu.svg" class="Icon" />
+                <div class="tooltip">Menu</div>
+              </div>
+            </div>
+          </div>
+          <div class="TopNavBar__Desktop__Middle">
+            <div class="SearchBarContainer">
+              <img src="../media/search.svg" class="Icon" />
+              <input
+                type="text"
+                id="TopNavBarSearchBarDesktop"
+                class="TopNavBarSearchBar"
+                placeholder="Find Books, Authors, or Quotes"
+              />
+            </div>
+            <div class="dropdown">
+              <div class="tab-container">
+                <div class="tab">Search by:</div>
+                <div class="tab search-type" data-search-type="books">
+                  books
+                </div>
+                <div class="tab search-type" data-search-type="authors">
+                  authors
+                </div>
+                <div class="tab search-type" data-search-type="words">
+                  words
+                </div>
+                <div class="tab" id="searchButtonDesktop">Search</div>
+              </div>
+            </div>
+          </div>
+          <div class="TopNavBar__Desktop__Right">
+            <div class="tooltip-container">
+              <div class="NotificationBttnContainer NotificationBound">
+                <img src="../media/bell.svg" class="Icon" />
+                <div class="tooltip">Notifications</div>
+              </div>
+            </div>
+            <div class="tooltip-container">
+              <div class="UserBttnContainer UserBound">
+                <img src="../media/user.svg" class="Icon" />
+                <div class="tooltip">My Profile</div>
+              </div>
+            </div>
+            <div class="UserGreetContainer">Hello,</div>
+            <div class="UserLogOutContainer">
+              <img src="../media/log-out.svg" class="Icon" />
+            </div>
+          </div>
+        </div>
+        <div class="TopNavBar__Mobile">
+          <div class="TopNavBar__Mobile__left">
+            <div class="tooltip-container">
+              <div class="HomeBttnContainer HomeBound">
+                <img src="../media/house.svg" class="Icon" />
+                <div class="tooltip">Home Page</div>
+              </div>
+            </div>
+            <div class="tooltip-container">
+              <div class="MenuBttnContainer">
+                <img src="../media/menu.svg" class="Icon" />
+                <div class="tooltip">Menu</div>
+              </div>
+            </div>
+            <div class="tooltip-container">
+              <div class="SearchBttnContainer">
+                <img src="../media/search.svg" class="Icon" />
+                <div class="tooltip">Search</div>
+              </div>
+            </div>
+          </div>
+          <div class="TopNavBar__Mobile__Right">
+            <div class="tooltip-container">
+              <div class="NotificationBttnContainer NotificationBound">
+                <img src="../media/bell.svg" class="Icon" />
+                <div class="tooltip">Notifications</div>
+              </div>
+            </div>
+            <div class="tooltip-container">
+              <div class="UserBttnContainer UserBound">
+                <img src="../media/user.svg" class="Icon" />
+                <div class="tooltip">My Profile</div>
+              </div>
+            </div>
+            <div class="UserLogOutContainer">
+              <img src="../media/log-out.svg" class="Icon" />
+            </div>
+          </div>
+          <div class="MobileSearchWindow">
+            <div class="SearchBarContainerMobile">
+              <div class="SearchBarContainerMobileInput">
+                <img src="../media/search.svg" class="IconMobile" />
+                <input
+                  type="text"
+                  id="TopNavBarSearchBarMobile"
+                  class="TopNavBarSearchBar"
+                  placeholder="Find Books, Authors, or Quotes"
+                />
+              </div>
+              <div class="tab-container">
+                <div class="tab">Search by:</div>
+                <div class="tab search-type" data-search-type="books">
+                  books
+                </div>
+                <div class="tab search-type" data-search-type="authors">
+                  authors
+                </div>
+                <div class="tab search-type" data-search-type="words">
+                  words
+                </div>
+                <div class="tab" id="searchButtonMobile">Search</div>
+              </div>
+            </div>
+            <div class="TopNavBarMobileSearchParameters"></div>
+          </div>
+        </div>
+      </div>
+      <div id="Main__Container">
+        <div id="SideNavBar__Mobile">
+          <ul id="SideNavBarOptions">
+            <li class="UserBound">My Page</li>
+            <li class="NotificationBound">Notifications</li>
+            <li class="LibraryBound">My Library</li>
+            <li class="AllWritersBound">Authors</li>
+            <li class="TradingBound">Book Trading</li>
+            <li class="QuizBound">Quiz</li>
+            <li class="BonusBound">Our Bonuses</li>
+          </ul>
+        </div>
+
+        <div id="Main__Container__Content">
+          <div id="MainBannerHolder">
+            <img src="../media/TempBanner.png" class="MainBanner" />
+          </div>
+
+          <div id="SearchForATradableBookContainer">
+            <div id="SearchForATradableBookHeader">
+              Search for a book by users
+            </div>
+            <div id="SearchForATradableBookQueryHolder">
+              <div id="SearchForATradableBookInputContainer">
+                <input
+                  type="text"
+                  id="SearchForATradableBookInput"
+                  placeholder="Search for a tradeable book!"
+                />
+              </div>
+            </div>
+          </div>
+          <div id="OfferedBooksContainer">
+            <div id="OfferedBooksHeader">
+              <div id="OfferedBooksHeaderText">Books for trade</div>
+              <div id="OfferedBooksHeaderShowAllBttnContainer">
+                <div id="OfferedBooksHeaderShowAllBttn" class="allButtons">
+                  Show All
+                </div>
+              </div>
+            </div>
+            <div id="OfferedBooksDisplay"></div>
+          </div>
+        </div>
+      </div>
+      <div id="BottomBar"></div>
+    </div>
+  </body>
+</html>

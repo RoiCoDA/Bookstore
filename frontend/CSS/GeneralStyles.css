@@ -1,0 +1,1335 @@
+:root
+{
+    --color-- : #6e9e0e;
+    --color--1 : #e1fbbb;
+    --color--2 : #b5cf9f;
+    --color--3 : #d4e4ac ;
+    --color--4 : #eff4df ;
+    --color--5 : #6e9e0e ;
+}
+
+@font-face {
+    font-family: 'LTCushionMedium';
+    src: url('../media/LTCushion-Medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'LTCushionBold';
+    src: url('../media/LTCushion-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'BethanyElingston';
+    src: url('../media/Bethany\ Elingston.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Meditative';
+    src: url('../media/Meditative.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'LTCushionBlack';
+    src: url('../media/LTCushion-Black.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'LTCushionMedium';
+  }
+
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+*:after, *:before { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+
+
+#TopNavBar
+{
+    position: fixed;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 50px;
+    z-index: 1003;
+}
+
+.Icon
+{
+    width: 100%;
+    height: 100%;
+}
+
+  /* Desktop window size */
+
+.TopNavBar__Desktop
+{
+    height: 100%;
+    width: 100%;
+    background-color: var(--color--);
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+}
+
+.TopNavBar__Desktop__left, .TopNavBar__Desktop__Middle, .TopNavBar__Desktop__Right
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.TopNavBar__Desktop__left
+{
+    justify-content: flex-start;
+    flex-basis: 15%;
+}
+
+.TopNavBar__Desktop__Middle
+{
+    flex-basis: 50%;
+}
+
+.dropdown {
+    position: absolute;
+    background-color: var(--color--4);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 0 0 5px 5px;
+    display: flex;
+    width: 55%;
+    top: 50px;
+    flex-direction: column;
+    box-sizing: border-box;
+    z-index: 100;
+    visibility: hidden;  
+}
+
+
+.tab-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.tab {
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 0 0 10px 10px ;
+    padding: 10px;
+    margin: 0 5px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.tab:hover {
+    background-color: #f0f0f0;
+}
+
+.tab:first-child {
+    flex-grow: 2; /* Make the first tab wider */
+    margin-right: 10px; /* Add some space to the right of the first tab */
+}
+
+.tab:not(:first-child) {
+    flex-grow: 1; /* Set equal width for the second and third tabs */
+    margin: 0 5px; /* Reduce the margin between the second and third tabs */
+}
+
+.TopNavBar__Desktop__Right
+{
+    flex-basis: 35%;
+    justify-content: flex-end;
+}
+
+.HomeBttnContainer, .MenuBttnContainer, .LibraryBttnContainer, .NotificationBttnContainer, .UserBttnContainer , .SearchBttnContainer, .UserLogOutContainer /* containers ( frames ) for the images. Images tend to go wild without a frame */
+{
+    height: 100%;
+    margin: 10px;
+    max-width: 30px;
+    min-width: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.UserGreetContainer
+{
+    display: flex;
+    width: 120px;
+    overflow: hidden;
+}
+
+
+.SearchBarContainer
+{
+    display:flex;
+    background-color: white;
+    width:100%;
+    border-radius: 10px;
+}
+
+.SearchBarContainer input
+{
+    width:80%;
+    font-size:18px;
+    border: none;
+    outline: none;
+    padding: 6px 6px;
+    margin-left: 3px;
+}
+.SearchBarContainer img
+{
+    width: 30px;
+    padding: 1px 0px;
+    margin-left: 3px;
+}
+
+  /* Mobile window size */
+
+.TopNavBar__Mobile
+{
+    height: 100%;
+    width: 100%;
+    background-color:var(--color--);
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+}
+
+
+.TopNavBar__Mobile__left, .TopNavBar__Mobile__Right
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.TopNavBar__Mobile__left
+{
+    justify-content: flex-start;
+    flex-basis: 50%;
+}
+
+.TopNavBar__Mobile__Right
+{
+    flex-basis: 50%;
+    justify-content: flex-end;
+}
+
+.MobileSearchWindow
+{
+    position: absolute;
+    background-color: var(--color--4);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 0 0 5px 5px;
+    display: flex;
+    width: 100%;
+    min-height: 70px;
+    top: 50px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    visibility: hidden; 
+}
+
+
+.TopNavBarSearchBar
+{
+    width: 90%;
+    border: 0;
+    font-size: 22px;
+
+}
+
+.SearchBarContainerMobile
+{
+    display:flex;
+    flex-direction: column;
+    background-color: white;
+    width:95%;
+    border-radius: 10px;
+    min-height: 35px;
+}
+
+.IconMobile
+{
+    max-width: 30px;
+}
+
+#HolderOfAll
+{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+#Main__Container
+{
+    display: flex;
+    height: 100%;
+    margin-top: 50px;
+}
+
+
+
+
+#SideNavBar__Mobile {
+    position: fixed;
+    top: 50px;
+    left: -100%; 
+    height: 100%;
+    background-color: rgb(239, 224, 210);
+    overflow-x: hidden;
+    z-index: 999;
+    width: 70%;
+    background-size: cover; /* This ensures the image covers the entire background */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-position: center center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); 
+    border-right: 2px solid rgb(255, 247, 246);
+    border-radius: 10px;
+    visibility: hidden;
+    transition: visibility 0s, left 0.3s ease;
+    overflow-y: auto;
+}
+
+
+#SideNavBar__Mobile.activeMobile {
+    left: 0;
+}
+
+
+
+#SideNavBarOptions {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    width: 90%;
+    overflow: hidden;
+    position: relative;
+}
+
+#SideNavBarOptions li {
+    padding: 15px 20px;
+    font-size: clamp(1rem, 2.5vw, 1.5rem);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    margin: 15px 0;
+    text-align: center;
+    background-color: rgb(131, 93, 39);
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    min-width: 250px; /* Ensure list items retain their shape */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    transition: padding 0.5s ease, margin 0.5s ease; /* Smooth transition for padding and margin */
+    min-width: fit-content;
+    color: white
+}
+
+
+#SideNavBarOptions li:hover {
+    background-color: rgb(99, 74, 48);
+    cursor: pointer;
+}
+
+li > a {
+    text-decoration: none;
+    color: inherit;
+    background-color: transparent;
+    outline: none;
+}
+
+li > a:link, li > a:visited, li > a:hover, li > a:active {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* Review Card Styles */
+
+.review-card {
+    flex: 0 0 auto; /* Prevent flex items from shrinking or growing */
+    min-height: 200px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.header, .book-name {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+#book-name {
+    font-weight: normal;
+    color: #333;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.date {
+    font-size: 0.8rem;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.name, .star-ranking, .votes {
+    background-color: #eee;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    text-align: center;
+    margin: 5px 0;
+}
+
+.description {
+    flex-grow: 1;
+    overflow-y: auto;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    margin-bottom: 10px;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.useful {
+    font-size: 1rem;
+}
+
+.buttons {
+    display: flex;
+    gap: 10px;
+
+}
+.vote-button {
+    background-color: #007bff; 
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.vote-button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    transform: scale(1.05); /* Slightly enlarge the button */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition */
+}
+
+.votes::before {
+    content: "People who found this \A helpful:";
+    display: block;
+    font-size: 0.8rem;
+    color: #666;
+    margin-bottom: 5px;
+    white-space: pre; /* Ensures that the \A is interpreted as a line break */
+}
+
+/* Star rating styles   */
+
+.cont
+{
+    direction: ltr;
+}
+
+.star-rating-container {
+    padding: 10px;
+    background-color: #f7f7f7;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    margin-bottom: 15px;
+  }
+
+  .star-rating-header {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 8px;
+  }
+
+  /* Stars Styling */
+  div.stars {
+    width: auto;
+    display: inline-block;
+    text-align: center;
+    display: flex;
+    direction: ltr;
+  }
+
+  input.star {
+    display: none;
+  }
+
+  label.star {
+    float: none;
+    padding: 5px;
+    font-size: 24px; 
+    color: #444;
+    transition: all .2s;
+    margin: 0 2px; 
+  }
+
+  input.star:checked ~ label.star:before {
+    content: '\f005';
+    color: #FD4;
+    transition: all .25s;
+  }
+
+  input.star-5:checked ~ label.star:before {
+    color: #FE7;
+    text-shadow: 0 0 10px #952; 
+  }
+
+  input.star-1:checked ~ label.star:before {
+    color: #F62;
+  }
+
+  label.star:hover {
+    transform: rotate(-10deg) scale(1.1); 
+  }
+
+  label.star:before {
+    content: '\f006';
+    font-family: FontAwesome;
+  }
+
+
+
+
+/* //////////////////////////// Cool 3D book displayer //////////////////////////////////   */
+
+.BookContainer {
+	list-style: none;
+	padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-left: 0;
+    gap: 15px;
+}
+
+.Book3DContainer {
+	width: 195px; 
+	height: 300px; 
+	margin: 22.5px; 
+	float: left;
+	-webkit-perspective: 750px; 
+	-moz-perspective: 750px;
+	perspective: 750px;
+    list-style-type: none;
+    padding: 0;
+    flex-shrink: 0;
+    position: relative;
+}
+
+.Book {
+	width: 195px; 
+	height: 300px; 
+	-webkit-transform-style: preserve-3d;
+	-moz-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+	-webkit-transform: translateZ(-97.5px); 
+	-moz-transform: translateZ(-97.5px);
+	transform: translateZ(-97.5px);
+	-webkit-transition: -webkit-transform 350ms;
+	-moz-transition: -moz-transform 350ms;
+	transition: transform 350ms;
+}
+
+.Book:hover {
+	-webkit-transform: rotateY(-78deg) translateZ(15px); 
+	-moz-transform: rotateY(-78deg) translateZ(15px);
+	transform: rotateY(-78deg) translateZ(15px);
+}
+
+/* Transformation and hovering  */
+
+.Book .BookPic,
+.Book .BookInfo {
+	position: absolute;
+	width: 195px; 
+	height: 300px; 
+	background-color: #fff;
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+	backface-visibility: hidden;
+
+}
+
+.Book .BookPic  {
+	-webkit-transform: translateZ(97.5px); 
+	-moz-transform: translateZ(97.5px);
+	transform: translateZ(97.5px);
+	background-size: cover;
+	background-repeat: no-repeat;
+    background-position: center;
+}
+
+.Book .BookInfo {
+	-webkit-transform: rotateY(90deg) translateZ(97.5px); 
+	-moz-transform: rotateY(90deg) translateZ(97.5px);
+	transform: rotateY(90deg) translateZ(97.5px);
+	border: 1px solid #B8B5B5;
+	font-size: 0.75em; 
+	overflow-y: hidden;
+}
+
+/* Shadow tricks */
+
+.csstransforms3d .Book::after {
+	content: '';
+	width: 195px; 
+	height: 195px; 
+	position: absolute;
+	bottom: 0;
+	box-shadow: 0 22.5px 37.5px rgba(0,0,0,0.3); 
+	-webkit-transform-origin: 100% 100%;
+	-moz-transform-origin: 100% 100%;
+	transform-origin: 100% 100%;
+	-webkit-transform: rotateX(90deg) translateY(97.5px); 
+	-moz-transform: rotateX(90deg) translateY(97.5px);
+	transform: rotateX(90deg) translateY(97.5px);
+	-webkit-transition: box-shadow 350ms;
+	-moz-transition: box-shadow 350ms;
+	transition: box-shadow 350ms;
+}
+
+.csstransforms3d .Book:hover::after {
+	box-shadow: 15px -3.75px 37.5px rgba(0,0,0,0.3);
+}
+
+/*  Book Information  */
+
+.BookInfo header {
+	color: #000000;
+	padding: 5.25px 7.5px; 
+	font-weight: bold;
+	background-size: contain;
+	background-repeat: no-repeat;
+    font-weight: bolder;
+}
+
+.BookInfo header h1 {
+	margin: 0 0 1.5px; 
+	font-size: 1.2em; 
+    color: black
+}
+
+.BookInfo header .rating {
+	border: 1px solid #FFF;
+	padding: 0px 2.25px; 
+}
+
+.BookInfo p {
+    padding: 0.9em 1em;
+    margin: 0;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #000000;
+    background-color: #f1ca6e;
+    line-height: 1.2em;
+    border-top: 5px solid #555;
+    overflow-y: auto;
+    height: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+    position: relative;
+}
+
+
+.view-book-btn {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px 10px;
+    font-size: 16px;
+    color: #fff;
+    background-color: var(--color--);
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    z-index: 2; 
+    transition: background-color 0.3s ease;
+}
+
+/* For the wishlist button in index ( any book ) */
+
+.wishlist-book-btn
+{
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    width: 80%;
+    transform: translateX(-50%);
+    padding: 10px 10px;
+    font-size: 16px;
+    color: #fff;
+    background-color: var(--color--);
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    z-index: 2; 
+    transition: background-color 0.3s ease;
+}
+
+.view-book-btn:hover, .wishlist-book-btn:hover, .read-book-div:hover {
+    background-color: rgb(120, 202, 120);
+}
+
+.BookInfo p::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    height: 20em; 
+    background: linear-gradient(to bottom, rgba(241, 202, 110, 0) 0%, rgba(241, 202, 110, 1) 110%);
+    pointer-events: none;
+    z-index: 1;
+}
+
+/* For the "have you read this book?" section in the user's library */
+
+.read-book-div {
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    width: 80%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 10px;
+    font-size: 16px;
+    color: #fff;
+    background-color: var(--color--);
+    border-radius: 6px;
+    z-index: 2; 
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+
+.read-book-checkbox {
+    margin-right: 10px;
+}
+
+/*************************************
+Fallback
+**************************************/
+.no-csstransforms3d .Book .BookPic,
+.no-csstransforms3d .Book .BookInfo {
+	position: relative;
+}
+
+#Main__Container__Content
+{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+/* Base styles for icon containers */
+.HomeBttnContainer, .MenuBttnContainer, .LibraryBttnContainer, .NotificationBttnContainer, .UserBttnContainer, .SearchBttnContainer, .UserLogOutContainer {
+    height: 100%;
+    margin: 10px;
+    max-width: 30px;
+    min-width: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    position: relative; 
+}
+
+/* Container for tooltips */
+.tooltip-container {
+    position: relative; 
+    display: inline-block;
+    z-index: 1002;
+}
+
+/* Style for the tooltip text */
+.tooltip {
+    visibility: hidden; 
+    width: 120px; 
+    background-color: #ffffff; 
+    color: #000000; 
+    text-align: center; 
+    border-radius: 5px;
+    padding: 5px; 
+    position: absolute; 
+    bottom: -125%;
+    left: 50%; 
+    margin-left: -60px; 
+    opacity: 0; 
+    transition: opacity 0.3s; 
+    transition-delay: 1s;
+    font-size: 12px; 
+    z-index: 1002;
+}
+
+/* Tooltip arrow */
+.tooltip::after {
+    content: '';
+    position: absolute;
+    top: 0%; 
+    left: 50%;
+    margin-left: -5px; 
+    border-width: 5px;
+    border-style: solid;
+    border-color: black transparent transparent transparent; 
+    z-index: 1002;
+}
+
+/* Show the tooltip on hover */
+.tooltip-container:hover .tooltip {
+    visibility: visible;
+    opacity: 1;
+    z-index: 1002;
+}
+
+
+
+/* Accessibility Button Container */
+#accessibilityButtonContainer {
+    position: fixed; /* Keep it fixed at the bottom-left corner */
+    bottom: 80px;
+    right: 20px;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align children to the start of the container */
+}
+
+/* Accessibility Button */
+#accessibilityButton {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+    padding: 2px 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    position: relative;
+    z-index: 1001; 
+}
+
+/* Accessibility Options Container */
+#accessibilityOptionsContainer {
+    position: absolute; 
+    bottom: 100%; 
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    visibility: hidden; 
+    opacity: 0; 
+    transition: opacity 0.3s, visibility 0.3s;
+    z-index: 1000; 
+    margin-bottom: 7px;
+    width: 200px;
+}
+
+
+/* When visible */
+#accessibilityOptionsContainer.visible {
+    visibility: visible;
+    opacity: 1;
+    
+}
+
+/* Option Tabs */
+.option-tab {
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    font-size: small;
+}
+
+
+.option-tab h3 {
+    margin: 0 0 5px;
+    font-size: small;
+}
+
+
+/* ReadDescriptionButton */
+#ReadDescriptionButton {
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    position: relative;
+    
+}
+
+#ReadDescriptionButton:hover {
+    transform: scale(1.05);
+}
+
+#ReadDescriptionButtonDescription {
+    display: none;
+    background-color: #f0f0f0;
+    color: #333;
+    padding: 10px;
+    border-radius: 5px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: -132px;
+    z-index: 1000;
+    width: 120px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: right;
+}
+
+/* toggle button Read Aloud */
+/* Toggle Switch */
+.toggle-switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.toggle-switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.toggle-slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: 0.4s;
+    border-radius: 34px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.toggle-slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: 0.4s;
+    border-radius: 50%;
+}
+
+.toggle-slider img {
+    position: absolute;
+    height: 18px;
+    width: 18px;
+    left: 6px;
+    bottom: 6px;
+    transition: transform 0.4s;
+}
+
+input:checked + .toggle-slider {
+    background-color: #007bff;
+}
+
+input:checked + .toggle-slider:before {
+    transform: translateX(26px);
+}
+
+input:checked + .toggle-slider img {
+    transform: translateX(26px);
+}
+/* Close accessibilty button */
+#closeAccessibilityButton {
+    position: absolute;
+    top: -7px;
+    right: -3px;
+    background-color: transparent;
+    color: rgb(70, 85, 218);
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+    z-index: 1002; /* Ensure it's on top */
+}
+
+
+#closeAccessibilityButton:hover {
+    color: #ff0000; /* Change color on hover for visual feedback */
+}
+
+#closeAccessibilityButtonDescription {
+    display: none;
+    background-color: #f0f0f0;
+    color: #000000;
+    padding: 10px;
+    border-radius: 5px;
+    position: absolute;
+    top: 50px;
+    transform: translateY(-50%);
+    right: 5px;
+    z-index: 1000;
+    width: 44px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-size: small;
+}
+
+#closeAccessibilityButtonDescription:hover {
+    display: block;
+}
+
+/* toggle button Color Blind Mode*/
+.color-blind-mode {
+    background-color: #e0e0e0 !important; 
+    color: #000 !important; 
+}
+
+.color-blind-mode a{
+    color: #020202 !important; 
+}
+
+.color-blind-mode button {
+    background-color: #706f6f !important; 
+    color: #cfd3d4 !important; 
+}
+
+.color-blind-mode header, .color-blind-mode footer, .color-blind-mode main , .color-blind-mode p {
+    background-color: #f8f9fa !important; 
+    color: #000 !important; 
+}
+
+.color-blind-mode div, .color-blind-mode body, .color-blind-mode #select-all-notifications:checked,#select-all-notifications {
+    background-color: #e0e0e0 !important; 
+    color: #000 !important; /
+}
+
+.color-blind-mode img,.color-blind-mode #timer-countdown {
+    filter: grayscale(100%) contrast(100%) !important; 
+}
+
+body.color-blind-mode .BookContainer .Book3DContainer .Book .BookPic {
+    filter: grayscale(100%) contrast(100%) brightness(100%);
+  }
+
+.color-blind-mode .BookInfo p::after{
+    filter: grayscale(100%) contrast(100%) !important;
+    color: #000 !important; 
+    
+  }
+.color-blind-mode .star-ranking , .color-blind-mode .toggle-slider{
+    filter: grayscale(100%) contrast(80%);
+    color: #000 !important; 
+}
+.color-blind-mode .filled-star, .color-blind-mode .description p ,.color-blind-mode #SideNavBar__Mobile.activeMobile , .color-blind-mode #SideNavBarOptions li{
+    background-color: #e0e0e0 !important; 
+    color: #000 !important;
+    
+}
+
+.color-blind-mode #searchButtonDesktop ,.color-blind-mode .tab.active{
+    border : black;
+}
+
+.vote-button.active {
+    background-color: #4CAF50; /* Green for upvote */
+    color: white;
+    border: 2px solid #388E3C; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    transform: scale(0.98); 
+}
+
+.vote-button.inactive {
+    background-color: #f44336; /* Red for downvote */
+    color: white;
+    border: 2px solid #C62828; /* Darker red border */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+}
+
+.vote-button:focus {
+    outline: none; 
+    box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.2); /* Custom focus outline */
+}
+
+
+#ReviewsCarouselContainer {
+    width: 90%;
+    border-radius: 15px;
+    min-height: 325px; 
+    background-color: rgb(195, 242, 202);
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+#ReviewCarouselBoxContainer {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Align items to the start */
+    overflow-x: auto;
+    scroll-behavior: smooth; 
+    padding: 10px;
+    gap: 10px; /* Ensure space between cards */
+    width: 100%; 
+    flex-wrap: nowrap; /* Prevent wrapping of items */
+}
+
+/* General container for stars */
+/* Star styling */
+.star-ranking {
+    margin-bottom: 5px; /* Space between text and stars */
+    font-weight: bold;  /* Optional: make the text bold */
+}
+.star-ranking .star {
+    font-size: 20px; /* Adjust size as needed */
+    pointer-events: none; /* Make stars non-clickable */
+    color: #D3D3D3; /* Default to unfilled star color */
+}
+
+/* Filled star */
+.star-ranking .star.filled-star {
+    color: #FFD700; /* Gold color for filled stars */
+}
+
+.star-ranking .star:before {
+    content: '★'; 
+}
+
+label.star {
+    padding:0;
+}
+
+
+.book-name{
+    font-size: 1rem;
+    font-weight:normal;
+}
+
+.votes{
+    padding:5px 0;
+    font-size: 1rem;
+}
+.name{
+    white-space: normal; 
+    word-break: break-word; 
+    overflow-wrap: break-word; 
+    line-height: 1.4; 
+    margin: 5px 0;
+}
+
+
+
+#searchButtonDesktop , #searchButtonMobile  {
+    padding: 12px 24px; 
+    background-color: #007bff; 
+    color: #ffffff; 
+    border: 2px solid #007bff; 
+    border-radius: 50px;
+    font-size: 14px; 
+    font-weight: bold; 
+    cursor: pointer; 
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease; 
+    outline: none; 
+}
+
+#searchButtonDesktop:hover ,#searchButtonMobile:hover {
+    background-color: #0044ff; /* Darker blue on hover */
+    color: #ffffff; /* Keep text color the same */
+    border-color: #0044ff; /* Keep border color the same */
+    transform: scale(1.05); /* Slightly enlarge the button on hover */
+}
+
+#searchButtonDesktop:focus , #searchButtonMobile:focus {
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.3); /* Focus outline with a subtle shadow matching the button color */
+}
+
+/* Style for the active tab */
+.tab.active {
+    background-color: #007bff;
+    color: white;
+    border-color: #007bff;
+    box-shadow: inset 0 3px 8px rgba(0, 0, 0, 0.2); /* Inner shadow for pressed effect */
+    transform: perspective(300px) rotateX(-20deg) ; /* Skew and rotate for a 3D trapezoid effect */
+    transform-origin: top; /* Ensures the transformation starts from the bottom */
+    border-top-left-radius: 5px; /* Add slight rounding to the top corners to match the trapezoid look */
+    border-top-right-radius: 5px; 
+    border-bottom: 3px solid #bbb; /* Makes the bottom of the tab appear wider */
+  }
+
+
+
+.tab.active .tab-content {
+    transform: translateY(2px); /* Slightly move the content down */
+}
+
+
+
+
+/*----------------------------------------------------------------
+//-- Popups CSS
+//*----------------------------------------------------------------*/
+
+.popup {
+    position: fixed;
+    z-index: 2001; 
+    background-color: white;
+    border: 1px solid #a1a1a1;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .popup-header {
+    background-color: var(--color--3);
+    padding: 10px;
+    font-weight: bold;
+  }
+  
+  .popup-body {
+    padding: 15px;
+    text-align: center;
+  }
+  
+  .discrete-popup {
+    width: 200px;
+    height: 150px;
+    position: fixed;
+    bottom: 20px;
+    right: 80px;
+    background-color: #fff;
+  }
+  
+  .invasive-popup {
+    width: 500px;
+    height: 300px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    z-index: 2001;
+  }
+  
+  
+  .hidden {
+    display: none;
+  }
+  
+  
+
+/*************************************
+Media Queries
+**************************************/
+
+
+@media screen and (max-width: 60.75em){
+	.Book3DContainer {
+		float: none;
+		margin: 15px auto 30px; 
+	}
+}
+
+
+@media (max-width: 800px)
+{
+
+    .tab-container
+    {
+        border-top: 1px solid black;
+        margin-top: 10px;
+    }
+}
+
+@media (min-width: 801px) and (max-width: 1901px)
+{
+    #SideNavBar__Mobile
+    {
+        width: 25%;
+    }
+}
+
+
+@media (min-width: 1900px)
+{
+    #SideNavBar__Mobile 
+    {
+        width: 15%;
+    }
+}
+
+.allButtons {
+    background-color: var(--color--2);
+    color: #3b3b3b;
+    border: none;
+    padding: 15px 30px;
+    font-size: 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.allButtons:hover {
+    color: #2a2a2a; 
+    background-color: rgb(143, 180, 129); 
+    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.3); 
+    transform: translateY(-2px); 
+}

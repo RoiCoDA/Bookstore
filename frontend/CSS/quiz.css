@@ -1,0 +1,426 @@
+#Main__Container__Content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh; /* Full viewport height */
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    gap: 20px; /* Space between elements */
+    background-color: var(--color--2);
+}
+
+/* Quiz Container */
+#QuizContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /*width: 100%;
+    max-width: 1200px;  */
+    width: 60%;
+    margin: 0 auto;
+}
+
+/* Quiz Header */
+#QuizHeader {
+    text-align: center;
+    margin-bottom: 20px; /* Space below the header */
+}
+
+/* Quiz Start Title Container */
+#QuizStartTitle {
+    text-align: center; /* Center-align the text */
+    padding: 20px; /* Add padding around the container */
+    margin: 20px auto; /* Center the container horizontally with margin */
+    max-width: 600px; /* Maximum width for the container */
+}
+
+#QuizStartTitle h2 {
+    font-size: 2rem; /* Larger font size for prominence */
+    font-weight: 700; /* Bold font weight for emphasis */
+    color: #333; /* Dark color for readability */
+    margin: 0 0 15px; /* Remove top margin and add space below the title */
+}
+
+#QuizStartTitle p {
+    font-size: 1.2rem; /* Font size for the paragraph */
+    color: #666; /* Slightly lighter color for contrast */
+    margin: 0; /* Remove default margins */
+    line-height: 1.5; /* Improved line height for readability */
+}
+
+.quiz-title {
+    font-size: 2rem; /* Larger font size for prominence */
+    font-weight: 700; /* Bold font weight for emphasis */
+    color: #444; /* Slightly lighter dark color for a modern look */
+    margin-bottom: 20px; /* Increased space between title and description */
+    padding: 10px 15px; /* Padding for better spacing around the text */
+    border-radius: 6px; /* Rounded corners for a softer appearance */
+    text-align: center; /* Center-align the text for better visual balance */
+    letter-spacing: 0.5px; /* Slight letter spacing for readability */
+    font-family: 'Helvetica Neue', sans-serif; /* Modern and clean font */
+}
+
+/* .quiz-description {
+    font-size: 16px; 
+    color: #666; 
+    margin: 0; 
+    line-height: 1.5; 
+} */
+
+/* Start Quiz Button */
+#startQuizButton {
+    display: inline-block;
+    font-size: 1rem; /* Adjust font size as needed */
+    font-weight: 600; /* Bold text for emphasis */
+    color: #fff; /* White text color for contrast */
+    background-color: #007bff; /* Blue background color for prominence */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Rounded corners for a modern look */
+    padding: 12px 20px; /* Padding for better spacing */
+    cursor: pointer; /* Pointer cursor on hover */
+    text-align: center; /* Center-align the text */
+    text-decoration: none; /* Remove underline from links */
+    transition: background-color 0.3s, transform 0.2s, box-shadow 0.2s; /* Smooth transitions */
+}
+
+#startQuizButton:hover {
+    background-color: #0056b3; /* Darker blue background on hover */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+}
+
+.question-title {
+    display: none;
+    font-size: 1.5rem; /* Larger font size for prominence */
+    font-weight: 600; /* Semi-bold for emphasis */
+    color: #333; /* Dark color for readability */
+    margin-bottom: 15px; /* Space between title and content */
+    padding: 10px 15px; /* Padding for better spacing */
+    border-radius: 8px; /* Rounded corners for a softer look */
+    text-align: left; /* Align text to the left for readability */
+    line-height: 1.4; /* Improved line height for better readability */
+    font-family: 'Arial', sans-serif; /* Clean and modern font */
+    max-width: 100%; /* Ensure the title does not overflow */
+    box-sizing: border-box; /* Include padding and border in width */
+}
+
+/* Quiz Body Styles */
+.quiz-body {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 100%; /* Full width by default */
+}
+
+/* Scoreboard Styles */
+.scoreboard {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; /* Center-align items horizontally */
+    text-align: center;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 8px; /* Slightly larger border radius for a modern look */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    width: 100%;
+    max-width: 400px; /* Maximum width for the scoreboard */
+    margin: 20px auto; /* Center the scoreboard horizontally with spacing */
+}
+
+#Scoreboard h2 {
+    font-size: 1.5rem; /* Adjust font size for header */
+    font-weight: 700; /* Bold font weight for emphasis */
+    color: #444; /* Dark color for readability */
+    margin: 0 0 20px; /* Remove top margin and add space below the header */
+}
+
+#userScoreboard {
+    list-style-type: none; /* Remove default list styling */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+    width: 100%; /* Ensure the list takes full width */
+}
+
+#userScoreboard li {
+    background-color: #ffffff; /* White background for each list item */
+    border: 1px solid #ddd; /* Light border for separation */
+    border-radius: 5px; /* Rounded corners for list items */
+    padding: 10px; /* Padding for spacing inside list items */
+    margin-bottom: 10px; /* Space between list items */
+    font-size: 1rem; /* Font size for user names */
+    color: #333; /* Dark color for text */
+    display: flex; /* Flexbox for centering content */
+    align-items: center; /* Center items vertically */
+    justify-content: space-between; /* Space between content and rank number */
+}
+
+#userScoreboard .user {
+    padding: 5px;
+    border-bottom: 1px solid #ddd;
+}
+
+#userScoreboard .user:last-child {
+    border-bottom: none;
+}
+
+#userScoreboard .placeholder {
+    color: #bbb; /* Slightly lighter gray for placeholders */
+    font-style: normal; /* Regular style to keep the text clean */
+    text-align: center; /* Center-align text */
+    background-color: #f9f9f9; /* Light background color to distinguish from other users */
+    border: 1px dashed #ddd; /* Dashed border to indicate placeholders */
+    padding: 10px; /* Ensure padding is consistent with other list items */
+    border-radius: 5px; /* Rounded corners to match the list items */
+    font-size: 1rem; /* Same font size for consistency */
+    font-weight: 300; /* Lighter font weight for a softer appearance */
+}
+
+/* Add a class to center the entire scoreboard content if needed */
+#Scoreboard .center-content {
+    text-align: center; /* Ensure all text is centered */
+}
+
+
+/* Quiz Question */
+.quiz-question {
+    text-align: center;
+    margin-bottom: 20px; /* Space below each question */
+}
+
+.quiz-options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px; 
+    justify-content: center; 
+}
+
+.quiz-option {
+    flex: 1 1 calc(50% - 16px); /* Adjust width of each answer */
+    box-sizing: border-box; 
+    padding: 15px; 
+    border: 1px solid #ddd; 
+    border-radius: 8px; 
+    cursor: pointer; 
+    font-size: 16px; 
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+}
+
+.quiz-option:hover {
+    background-color: lightgray;
+    transform: scale(1.03); /* Slightly larger on hover for emphasis */
+    cursor: pointer; /* Ensure pointer cursor is shown */
+    border: 1px solid #555; /* Dark gray border on hover */
+}
+
+.quiz-option.correct.selected , .quiz-option.incorrect.selected {
+    border: 3px solid #007bff; 
+}
+
+.quiz-option.correct {
+    background-color: #28a745; 
+    color: white; 
+    border: 2px solid #218838; 
+}
+
+.quiz-option.incorrect {
+    background-color: #dc3545; 
+    color: white; 
+    border: 2px solid #c82333; 
+}
+
+#AuthorImageContainer {
+    display: none;
+    text-align: center; /* Center the image horizontally */
+    margin: 20px 0; /* Add vertical margins for spacing */
+}
+
+#authorImage {
+    max-width: 100%; /* Ensure the image scales with the container */
+    height: auto; /* Maintain aspect ratio */
+    max-height: 150px; /* Limit the height to 150px or any desired height */
+    border-radius: 8px; /* Optional: add rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Optional: add a shadow for better visibility */
+}
+
+#timer-container {
+    display: none;
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+    margin: 20px auto;
+}
+
+#timer-bar {
+    width: 100%;
+    height: 20px;
+    background-color: #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Optional: add a shadow for better visibility */
+}
+
+#timer-progress {
+    height: 100%;
+    width: 100%;  
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: #4caf50;
+    transition: width 0.1s linear; /* Transition time should match updateTimer interval */
+}
+
+#timer-countdown {
+    /* old */
+    /* text-align: center;
+    margin-top: 10px;
+    font-size: 18px;
+    color: #333; 
+    font-weight: bold;  */
+
+    /*
+    background: linear-gradient(135deg, #6a0dad, #9c3d9b); 
+    border: 2px solid #8e2d9b;  */
+
+    display: flex; /* Use flexbox for centering content */
+    justify-content: center; /* Center-align content horizontally */
+    align-items: center; /* Center-align content vertically */
+    margin-top: 20px; /* Increased top margin for better spacing */
+    font-size: 2rem; /* Larger font size for better visibility */
+    color: #ffffff; /* White text color for contrast */
+    font-weight: 700; /* Bold font weight for emphasis */
+    background: linear-gradient(135deg, #f46b45, #eea849); /* Gradient background for a vibrant look */
+    border: 2px solid #d4a20b; /* Border with a complementary color */
+    border-radius: 8px; /* Rounded corners for a modern look */
+    padding: 15px 20px; /* Padding for spacing around the text */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* Light shadow for depth */
+    font-family: 'Arial', sans-serif; /* Clean and readable font */
+    text-align: center; /* Ensure text is centered */
+    max-width: 250px; /* Limit the width for better alignment */
+    margin: 20px auto; /* Center the timer horizontally */
+}
+
+/* Styles for higher resolutions (900px and up) */
+@media (min-width: 900px) {
+    #Main__Container__Content {
+        flex-direction: row; /* Row layout for larger screens */
+        align-items: flex-start; /* Align items to the top */
+    }
+
+    #QuizContainer {
+        flex-direction: row;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .scoreboard {
+        width: 25%; 
+        margin-right: 30px; 
+        margin-left: 30px; 
+    }
+    .quiz-content{
+        width: 40%;
+    }
+
+    /* .quiz-body {
+        width: 70%;
+    } */
+}
+
+/* Styles for lower resolutions (less than 900px) */
+@media (max-width: 899px) {
+    #Main__Container__Content {
+        flex-direction: column; /* Stack elements vertically */
+        align-items: center; /* Center items horizontally */
+        
+    }
+
+    #QuizContainer {
+        flex-direction: column-reverse;
+        width: 100%;
+    }
+
+    #QuizStartTitle {
+        padding: 15px; /* Adjust padding on smaller screens */
+        margin: 15px auto; /* Adjust margin for better alignment */
+    }
+
+    #QuizStartTitle h2 {
+        font-size: 1.75rem; /* Slightly smaller font size for the title */
+        margin-bottom: 10px; /* Adjust space below the title */
+    }
+
+    #QuizStartTitle p {
+        font-size: 1rem; /* Adjust font size for the paragraph */
+    }
+
+    .scoreboard {
+        margin-top: 20px;;
+        width: 70%;
+        margin-bottom: 20px; /* Space below scoreboard */
+    }
+
+    .quiz-title {
+        font-size: 1.5rem; /* Smaller font size on smaller screens */
+        padding: 8px 12px; /* Adjust padding for a more compact appearance */
+        margin-bottom: 15px; /* Adjust bottom margin */
+        border-radius: 4px; /* Slightly smaller border radius */
+    }
+
+    .question-title {
+        font-size: 1.25rem; /* Slightly smaller font size on smaller screens */
+        padding: 8px 12px; /* Adjust padding for smaller screens */
+    }
+    /* #QuizDescription {
+        font-size: 14px; 
+    } */
+
+    .quiz-body {
+        width: 100%; /* Full width */
+    }
+    .quiz-content{
+        width: 70%;
+    }
+
+}
+
+
+@media (max-width: 499px) {
+
+    #QuizStartTitle {
+        padding: 10px; /* Further reduce padding for very small screens */
+        margin: 10px auto; /* Further adjust margin */
+    }
+
+    #QuizStartTitle h2 {
+        font-size: 1.5rem; /* Further reduce font size for the title */
+        margin-bottom: 8px; /* Adjust space below the title */
+    }
+
+    #QuizStartTitle p {
+        font-size: 0.9rem; /* Further reduce font size for the paragraph */
+    }
+
+    .question-title {
+        font-size: 1rem; /* Further reduce font size on very small screens */
+        padding: 6px 10px; /* Further adjust padding for very small screens */
+    }
+    .quiz-option {
+        flex: 1 1 calc(100% - 16px); /* Full width for quiz options */
+    }
+    #timer-countdown {
+        font-size: 1.5rem; /* Smaller font size for smaller screens */
+        padding: 10px 15px; /* Reduced padding for smaller screens */
+        border: 1px solid #d4a20b; /* Thinner border for smaller screens */
+        max-width: 90%; /* Adjust width to take up more space */
+        margin: 15px auto; /* Slightly reduced margin for smaller screens */
+    }
+}

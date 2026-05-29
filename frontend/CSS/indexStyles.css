@@ -1,0 +1,479 @@
+@font-face {
+    font-family: 'BethanyElingston';
+    src: url('../media/Bethany\ Elingston.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+#Main__Container__Content {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center items horizontally */
+    justify-content: flex-start; /* Align items to the top */
+    min-height: 100vh; /* Ensure the container takes full viewport height */
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Ensure padding and border are included in the element's total width and height */
+    gap: 50px;
+}
+
+#MainBannerHolder {
+    margin-top: 20px;
+    width: 100%; /* Ensures the banner container takes full width */
+    max-width: 1500px; /* Optional: Set a maximum width */
+    display: flex; /* Use flex to center the image */
+    justify-content: center; /* Center the image horizontally */
+}
+
+#MainBannerHolder img
+{
+    border-radius: 15px;
+}
+
+#BookStoreName {
+    z-index: 2500;
+    color: white;
+    font-family: BethanyElingston;
+    position: absolute;
+    top: 10%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    font-size: clamp(32px, 6vw, 140px);
+    white-space: nowrap; /* Prevents the text from wrapping */
+}
+
+.MainBanner {
+    width: 100%; /* Ensures the banner image resizes with its container */
+    height: auto; /* Maintains aspect ratio */
+}
+
+#ad
+{
+    margin-bottom: 20px;
+    width: 100%; /* Ensures the banner container takes full width */
+    max-width: 1500px; /* Optional: Set a maximum width */
+    display: flex; /* Use flex to center the image */
+    justify-content: center; /* Center the image horizontally */
+}
+
+#ad img
+{
+    max-width: 600px;
+    min-width: 300px;
+}
+
+#BookFlashSaleContainer
+{
+    display:none;
+    border-radius: 15px;
+    min-height: 300px; 
+    /* height: 30vh; */
+    background-color: azure;
+    width: 90%;
+}
+
+#BookFlashSaleBox
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    background-color: var(--color--3);
+}
+
+#BookFlashSaleMicroBox
+{
+    width: 28%;
+    min-height: 350px;
+    border-radius: 20px;
+    border: 1px solid black;
+    background-color: var(--color--2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#BookFlashSaleMacroBox
+{
+    width: 70%;
+    min-height: 350px;
+    border-radius: 20px;
+    border: 1px solid black;
+    background-color: var(--color--2);
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#BookFlashSaleMicroBookPhoto
+{
+  margin-top: 10px;
+  width: 150px;
+  height: 200px;
+  border-radius: 5px;
+  background-size: cover; /* Ensure the image covers the entire element */
+  background-position: center center; /* Center the image both horizontally and vertically */
+  background-repeat: no-repeat; /* Prevent the image from repeating */
+}
+
+#BookFlashSaleMicroPrices
+{
+    height: 70px;
+}
+
+#BookFlashSaleBeforePrice
+{
+    font-size: 15px;
+    text-decoration: line-through;
+    margin: 4px;
+}
+
+#BookFlashSaleAfterPrice
+{
+    font-size: 22px;
+    margin: 6px;
+    color: red;
+    font-weight: bolder;
+}
+
+#BookFlashSaleHeader, #BookTopPicksHeader, #AllBooksLibraryHeader, #ReviewCarouselHeader
+{
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    border-bottom: 1px solid black;
+    background-color: aliceblue;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    width: 100%;
+}
+
+#BookTopPicksContainer
+{
+    border-radius: 15px;
+    background-color: var(--color--2);
+    width: 90%;
+}
+
+
+ /* Top 10 Books */
+/* Container for the Top Picks section */
+#BookTopPicksBookBox {
+    width: 100%;
+    overflow: hidden;
+    padding: 30px 0;
+    position: relative;
+}
+
+/* Logos container */
+#BookTopPicksBookBox .logos {
+    display: flex;
+    width: 100%; /* Full width of the container */
+    overflow: hidden;
+    position: relative;
+}
+
+/* Fading effect on the sides */
+#BookTopPicksBookBox .logos:before,
+#BookTopPicksBookBox .logos:after {
+    position: absolute;
+    top: 0;
+    content: '';
+    width: 250px;
+    height: 100%;
+    z-index: 2;
+    pointer-events: none; /* Allow clicks to pass through */
+}
+
+#BookTopPicksBookBox .logos:before {
+    left: 0;
+    background: linear-gradient(to left, rgba(255, 255, 255, 0), #fff);
+    opacity: 0.3;
+}
+
+#BookTopPicksBookBox .logos:after {
+    right: 0;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), #fff);
+    opacity: 0.3;
+}
+
+/* Animation for continuous slide */
+#BookTopPicksBookBox .logo_items {
+    display: flex;
+    width: calc(100% * 2); /* Twice the width of the container to allow for smooth scrolling */
+    animation: slide 13s linear infinite;
+}
+
+#BookTopPicksBookBox .logos:hover .logo_items {
+    animation-play-state: paused;
+}
+
+/* Style for book images */
+#BookTopPicksBookBox .logo_items img {
+    height: 300px;
+    width: 195px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+/* Keyframes for the sliding effect */
+@keyframes slide {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%); /* Translate by the full width of the container */
+    }
+}
+
+/* Media Query for smaller screens */
+@media (max-width: 1110px) {
+    #BookTopPicksBookBox .logo_items {
+        /* Adjust width to ensure continuous scroll */
+        width: 400%; /* Four times the container's width to ensure seamless scrolling */
+    }
+
+    #BookTopPicksBookBox .logo_items img {
+        /* Adjust image size if necessary */
+        height: 200px;
+        width: auto; /* Allow width to adjust based on height */
+        margin-right: 5px; /* Adjust spacing between images */
+    }
+}
+
+@media (max-width: 440px) {
+    #BookTopPicksBookBox .logo_items img {
+        height: 150px; /* Adjust the height of the images */
+        width: 100px;  /* Adjust the width of the images */
+        margin-right: 5px; /* Adjust the margin between images */
+    }
+
+    #BookTopPicksBookBox .logos:before,
+    #BookTopPicksBookBox .logos:after {
+        width: 100px; /* Adjust the width of the gradient overlays */
+    }
+}
+
+
+/* PLACEHOLDER FOR ALL BOOKS DISPLAY FUNCTION ON LANDING PAGE */
+/*                   ////////////////////////////////////////////             */
+
+
+#AllBooksLibraryBookBox
+{
+    width: 95%; /* Optional: Set a maximum width for content sections */
+    margin: 0 auto 25px auto;
+    min-height: 600px;
+    /* height: 50vh; */
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Space between items */
+    overflow: hidden;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#AllBooksLibraryContainer
+{
+    background-color: var(--color--3);
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Adjust column width as needed */
+    gap: 20px; /* Space between items */
+    width: 90%;
+    overflow: hidden;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+} 
+.BookContainer {
+    list-style-type: none;
+    padding: 0;
+}
+#ResetButtonContainer {
+    display: none; /* Hide initially */
+    padding: 8px;
+    margin-bottom: 25px;
+}
+
+#AllBooksLibraryIndexBttnContainer
+{
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 25px;
+
+}
+
+
+
+/*              ////////////////////////////////////                    */
+
+#BottomBanner
+{
+    width: 100%; /* Ensures the banner container takes full width */
+    max-width: 1500px; /* Optional: Set a maximum width */
+    display: flex; /* Use flex to center the image */
+    justify-content: center; /* Center the image horizontally */
+}
+
+.UnmainBanner
+{
+    width: 100%; /* Ensures the banner image resizes with its container */
+    height: auto; /* Maintains aspect ratio */
+}
+
+
+
+
+/*              ////////////////////////////////////                    */
+
+
+
+
+/*      Sale stuff        */
+
+
+.flash-sale-book {
+    width: 140px;
+    height: 240px;
+    border-radius: 15px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    margin: 0 5px;
+    overflow: hidden;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    transition: transform 0.3s ease-in-out; /* Smooth transition */
+  }
+
+  .flash-sale-book:hover {
+    transform: scale(1.15); /* Grow 15% on hover */
+  }
+  
+  /* Overlay title */
+  .flash-sale-book-title {
+    width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  text-align: center;
+  padding: 5px 0;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  }
+  
+  /* Go to book page button */
+  .go-to-book-page-btn {
+    margin-top: 10px;
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 10px 24px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 60%;
+  text-align: center;
+  }
+
+/*        Confetti           */
+
+canvas {
+    position: fixed; 
+  top: 0;
+  left: 0;
+  pointer-events: none; /* Make the canvas ignore pointer events */
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+  }
+
+/*                        */
+
+
+@media (max-width: 800px)
+{
+    #BookFlashSaleBox 
+    {
+        flex-direction: column;
+    }
+
+    #BookFlashSaleMicroBox
+    {
+        width: 70%
+    }
+
+    #BookFlashSaleMacroBox
+    {
+        width: 90%;
+        flex-wrap: wrap;
+    }
+
+    
+}
+
+.splide{
+    width: 600px;
+    max-width: 900px;
+}
+
+@media (max-width: 600px)
+{
+    .splide{
+        width: 400px;
+    }
+    .meta{
+        display:flex;
+        flex-direction: column;
+        /* justify-content: space-between; */
+    }
+    .footer{
+        display:flex;
+        flex-direction: column;
+        /* justify-content: space-between; */
+    }
+}
+
+@media (max-width: 400px)
+{
+    .splide{
+        width: 300px;
+        /* font-size:8px; */
+    }
+    /* .review-card{
+        width: 300px;
+        
+        display:flex;
+        flex-direction: column;
+    } */
+    .meta{
+        display:flex;
+        flex-direction: column;
+        /* justify-content: space-between; */
+    }
+    .footer{
+        display:flex;
+        flex-direction: column;
+        /* justify-content: space-between; */
+    }
+}
+
+
+/* .splide__slide{
+    width: 100%;
+} */
